@@ -7,6 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
+![Day](https://img.shields.io/badge/Current_Day-1_of_160-blueviolet?style=for-the-badge)
 
 <br/>
 
@@ -39,11 +40,11 @@ This repository documents my complete journey of learning **Java** and **Data St
 ## 🗺️ Master Roadmap — 160 Days
 
 ```
-Phase 1 ──────────────────────────────── Java Fundamentals      [Day 01–21]  ✅ / 🔄 / ⏳
-Phase 2 ──────────────────────────────── Advanced Java + Basics [Day 22–45]  ⏳
-Phase 3 ──────────────────────────────── Core DSA               [Day 46–100] ⏳
-Phase 4 ──────────────────────────────── Advanced DSA           [Day 101–140]⏳
-Phase 5 ──────────────────────────────── Interview Prep         [Day 141–160]⏳
+Phase 1 ──────────────────────────────── Java Fundamentals      [Day 01–21]  🔄 In Progress
+Phase 2 ──────────────────────────────── Advanced Java + Basics [Day 22–45]  ⏳ Upcoming
+Phase 3 ──────────────────────────────── Core DSA               [Day 46–100] ⏳ Upcoming
+Phase 4 ──────────────────────────────── Advanced DSA           [Day 101–140]⏳ Upcoming
+Phase 5 ──────────────────────────────── Interview Prep         [Day 141–160]⏳ Upcoming
 ```
 
 > 🟩 Completed &nbsp;&nbsp; 🟦 In Progress &nbsp;&nbsp; ⬜ Upcoming
@@ -59,7 +60,7 @@ Phase 5 ────────────────────────
 
 | Days | Topic | Status |
 |------|-------|--------|
-| Day 01–02 | Variables, Data Types, Type Casting, Operators | ⬜ |
+| Day 01–02 | Variables, Data Types, Type Casting, Operators | 🔄 In Progress |
 | Day 03–05 | Conditionals (if-else, switch), Loops (for, while, do-while) | ⬜ |
 | Day 06–08 | Functions/Methods, Scope, Recursion Intro | ⬜ |
 | Day 09–12 | Arrays (1D + 2D), Array Manipulation | ⬜ |
@@ -144,7 +145,10 @@ java-dsa-journey/
 │   │   └── Problems/
 │   │       ├── P1_HelloProgrammer.java
 │   │       ├── P2_SimpleCalculator.java
-│   │       └── ...
+│   │       ├── P3_TemperatureConverter.java
+│   │       ├── P4_SwapNumbers.java
+│   │       ├── P5_TypeCastingDetective.java
+│   │       └── P6_EvenOdd.java
 │   ├── Day02_Operators/
 │   ├── Day03-05_Conditionals_Loops/
 │   ├── Day06-08_Functions_Recursion/
@@ -154,36 +158,12 @@ java-dsa-journey/
 │   └── Day19-21_OOP_Advanced/
 │
 ├── 📂 Phase-2_Advanced-Java/
-│   ├── Day22-25_Collections/
-│   ├── Day26-30_Recursion_Backtracking/
-│   ├── Day31-32_Complexity_Analysis/
-│   ├── Day33-37_Sorting/
-│   ├── Day38-40_Searching/
-│   ├── Day41-43_Bit_Manipulation/
-│   └── Day44-45_Math_for_DSA/
-│
 ├── 📂 Phase-3_Core-DSA/
-│   ├── Day46-55_Linked_List/
-│   ├── Day56-65_Stack_Queue/
-│   ├── Day66-72_Binary_Search/
-│   ├── Day73-79_Two_Pointers_Sliding_Window/
-│   ├── Day80-85_Hashing/
-│   ├── Day86-98_Trees_BST/
-│   └── Day99-100_Heaps/
-│
 ├── 📂 Phase-4_Advanced-DSA/
-│   ├── Day101-115_Graphs/
-│   ├── Day116-136_Dynamic_Programming/
-│   └── Day137-140_Greedy/
-│
 ├── 📂 Phase-5_Interview-Prep/
-│   ├── Day141-145_Tries_Segment_Trees/
-│   ├── Day146-152_Mixed_Problems/
-│   └── Day153-160_Mock_Interviews/
 │
 ├── 📂 Weekly-Progress/
 │   ├── Week01_Review.md
-│   ├── Week02_Review.md
 │   └── ...
 │
 ├── 📂 Mistakes-and-Learnings/
@@ -216,13 +196,11 @@ Remaining   : 159
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `░░░░░░░░░░` 0% | 0 | 21 |
+| Phase 1 — Java Fundamentals | `█░░░░░░░░░` 5% | 1 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
 | Phase 5 — Interview Prep | `░░░░░░░░░░` 0% | 0 | 20 |
-
-> 📝 *I update this table manually every week as I complete phases.*
 
 ---
 
@@ -230,11 +208,553 @@ Remaining   : 159
 
 | Day | Date | Topic | Problems Solved | Status | Notes |
 |-----|------|-------|----------------|--------|-------|
-| 01 | Mar 30, 2025 | Variables, Data Types, Operators | 6 | 🔄 In Progress | — |
-| 02 | — | — | — | ⏳ | — |
-| 03 | — | — | — | ⏳ | — |
+| [01](#-day-1--march-30-2025) | Mar 30, 2025 | Variables, Data Types, Type Casting, Operators | 6 | ✅ Completed | Strong start! |
+| 02 | — | — | — | ⏳ Upcoming | — |
+| 03 | — | — | — | ⏳ Upcoming | — |
 
-> 💡 *Updated daily. Each day links to its folder with code + notes.*
+---
+
+---
+
+# 📖 DAILY REPORTS
+
+---
+
+## ✅ DAY 1 | March 30, 2025
+
+<div align="center">
+
+![Day](https://img.shields.io/badge/Day-01_of_160-blueviolet?style=for-the-badge)
+![Phase](https://img.shields.io/badge/Phase-1_Java_Fundamentals-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed_✅-brightgreen?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems_Solved-6-orange?style=for-the-badge)
+![Hours](https://img.shields.io/badge/Hours_Spent-5-blue?style=for-the-badge)
+
+</div>
+
+---
+
+### 🎯 Day 1 Goal
+> Understand how Java works, set up the environment, master variables, data types, type casting, and operators — then **write code**, not just read it.
+
+---
+
+### ⏰ Time Breakdown
+
+| Time Block | Activity | Duration |
+|------------|----------|----------|
+| Block 1 | Java Intro + Setup + First Program | 60 min |
+| Block 2 | Variables + Data Types + Type Casting | 60 min |
+| Block 3 | Operators (All Types) | 60 min |
+| Block 4 | Practice Set — 6 Problems | 90 min |
+| Block 5 | Revision + Mini Challenge + Reflection | 30 min |
+
+---
+
+### 📘 CONCEPTS LEARNED
+
+---
+
+#### 🔷 1. How Java Works
+
+Java is a **compiled + interpreted** language. This makes it platform-independent.
+
+```
+Your Code (.java)
+      ↓  javac (Java Compiler)
+Bytecode (.class)
+      ↓  JVM (Java Virtual Machine)
+Output on ANY Machine
+```
+
+| Term | Full Form | Role |
+|------|-----------|------|
+| **JDK** | Java Development Kit | Write and compile Java code |
+| **JRE** | Java Runtime Environment | Run Java programs |
+| **JVM** | Java Virtual Machine | Converts bytecode → machine code |
+| **Bytecode** | — | Intermediate `.class` file |
+
+> 💡 **Key Insight:** Java's "Write Once, Run Anywhere" works because JVM is platform-specific, but bytecode is universal.
+
+---
+
+#### 🔷 2. First Java Program
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+**Every keyword explained:**
+
+| Keyword | Meaning |
+|---------|---------|
+| `public` | Access modifier — anyone can access this |
+| `class Main` | Every Java program lives inside a class |
+| `static` | Belongs to the class, not an object |
+| `void` | This method returns no value |
+| `main` | Entry point — JVM starts execution here |
+| `String[] args` | Command-line arguments array |
+| `System.out.println` | Prints to console WITH new line |
+| `System.out.print` | Prints to console WITHOUT new line |
+
+---
+
+#### 🔷 3. Variables & Data Types
+
+A **variable** is a named memory container that stores a value.
+
+```java
+// Syntax: dataType variableName = value;
+int age = 20;
+double price = 99.99;
+char grade = 'A';
+boolean isPass = true;
+String name = "Rahul";   // Non-primitive (Object)
+```
+
+---
+
+#### 🔷 4. Primitive Data Types — Complete Table
+
+| Type | Size | Default | Range | Example |
+|------|------|---------|-------|---------|
+| `byte` | 1 byte | 0 | -128 to 127 | `byte b = 100;` |
+| `short` | 2 bytes | 0 | -32,768 to 32,767 | `short s = 1000;` |
+| `int` | 4 bytes | 0 | -2,147,483,648 to 2,147,483,647 | `int x = 500;` |
+| `long` | 8 bytes | 0L | Very large | `long l = 99999L;` |
+| `float` | 4 bytes | 0.0f | 6–7 decimal digits | `float f = 3.14f;` |
+| `double` | 8 bytes | 0.0d | 15 decimal digits | `double d = 3.14159;` |
+| `char` | 2 bytes | '\u0000' | Single character | `char c = 'A';` |
+| `boolean` | 1 bit | false | true / false | `boolean b = true;` |
+
+> 📌 **Non-Primitive:** `String`, Arrays, Classes — stored as objects in heap memory. Default value is `null`.
+
+**Primitive vs Non-Primitive:**
+
+| Feature | Primitive | Non-Primitive |
+|---------|-----------|---------------|
+| Stores | Actual value | Memory address (reference) |
+| Memory | Stack | Heap |
+| Example | `int`, `char`, `boolean` | `String`, Arrays, Classes |
+| Default | 0 / false | `null` |
+
+---
+
+#### 🔷 5. Type Casting
+
+Converting a value from one data type to another.
+
+**Widening — Automatic (small → big, NO data loss)**
+
+```java
+int x = 100;
+long l = x;      // int → long  ✅ automatic
+double d = x;    // int → double ✅ automatic
+
+// Safe widening order:
+// byte → short → int → long → float → double
+```
+
+**Narrowing — Manual (big → small, possible data loss)**
+
+```java
+double d = 9.99;
+int x = (int) d;     // x = 9  ← decimal TRUNCATED (NOT rounded!)
+
+float f = 3.99f;
+int i = (int) f;     // i = 3  ← always truncates
+```
+
+> ⚠️ **Critical Rule:** Narrowing TRUNCATES — `(int) 3.9 = 3`, NOT `4`.
+
+```java
+// Most Common Bug — Integer Division
+int a = 7, b = 2;
+double result1 = a / b;           // → 3.0  ❌ (int division done FIRST)
+double result2 = (double) a / b;  // → 3.5  ✅ (cast BEFORE dividing)
+```
+
+---
+
+#### 🔷 6. Operators
+
+**A. Arithmetic Operators**
+
+```java
+int a = 10, b = 3;
+System.out.println(a + b);   // 13  — Addition
+System.out.println(a - b);   // 7   — Subtraction
+System.out.println(a * b);   // 30  — Multiplication
+System.out.println(a / b);   // 3   — Integer division (decimal dropped!)
+System.out.println(a % b);   // 1   — Remainder (Modulo)
+```
+
+**B. Relational Operators — Always returns boolean**
+
+```java
+System.out.println(10 > 3);    // true
+System.out.println(10 < 3);    // false
+System.out.println(10 >= 10);  // true
+System.out.println(10 <= 9);   // false
+System.out.println(10 == 10);  // true
+System.out.println(10 != 5);   // true
+```
+
+> ⚠️ `=` is **assignment**. `==` is **comparison**. Never confuse these!
+
+**C. Logical Operators**
+
+```java
+System.out.println(true && true);    // true  — AND: both must be true
+System.out.println(true && false);   // false
+System.out.println(true || false);   // true  — OR: at least one true
+System.out.println(false || false);  // false
+System.out.println(!true);           // false — NOT: reverses
+System.out.println(!false);          // true
+```
+
+**D. Increment & Decrement Operators**
+
+```java
+int x = 5;
+System.out.println(x++);   // prints 5, THEN x becomes 6  (post-increment)
+System.out.println(++x);   // x becomes 7, THEN prints 7  (pre-increment)
+System.out.println(x--);   // prints 7, THEN x becomes 6  (post-decrement)
+System.out.println(--x);   // x becomes 5, THEN prints 5  (pre-decrement)
+```
+
+**E. Assignment Operators**
+
+```java
+int x = 10;
+x += 5;    // x = 15
+x -= 3;    // x = 12
+x *= 2;    // x = 24
+x /= 4;    // x = 6
+x %= 4;    // x = 2
+```
+
+---
+
+### 🧠 PRACTICE SET — All 6 Problems Solved ✅
+
+---
+
+#### ✅ Problem 1 — Hello Programmer `[Easy]`
+
+**Task:** Store name and age in variables, print a formatted sentence.
+
+```java
+public class P1_HelloProgrammer {
+    public static void main(String[] args) {
+        String name = "Rahul";
+        int age = 20;
+        System.out.println("My name is " + name + " and I am " + age + " years old.");
+    }
+}
+```
+
+```
+Output:
+My name is Rahul and I am 20 years old.
+```
+
+> 🔑 **Key Learning:** `+` operator concatenates String with other types. Java auto-converts `int` to String when joining with `+`.
+
+---
+
+#### ✅ Problem 2 — Simple Calculator `[Easy]`
+
+**Task:** Perform all arithmetic operations on `a = 17`, `b = 5`.
+
+```java
+public class P2_SimpleCalculator {
+    public static void main(String[] args) {
+        int a = 17, b = 5;
+        System.out.println("Addition       : " + (a + b));
+        System.out.println("Subtraction    : " + (a - b));
+        System.out.println("Multiplication : " + (a * b));
+        System.out.println("Division       : " + (a / b));
+        System.out.println("Remainder      : " + (a % b));
+        System.out.println("Decimal Div    : " + ((double) a / b));
+    }
+}
+```
+
+```
+Output:
+Addition       : 22
+Subtraction    : 12
+Multiplication : 85
+Division       : 3
+Remainder      : 2
+Decimal Div    : 3.4
+```
+
+> 🔑 **Key Learning:** `17/5 = 3` (integer division). Cast one operand to `double` to get `3.4`.
+
+---
+
+#### ✅ Problem 3 — Temperature Converter `[Easy-Medium]`
+
+**Task:** Convert Celsius to Fahrenheit. Formula: `F = (C × 9/5) + 32`
+
+```java
+public class P3_TemperatureConverter {
+    public static void main(String[] args) {
+        double celsius = 37.0;
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        System.out.println(celsius + "°C = " + fahrenheit + "°F");
+    }
+}
+```
+
+```
+Output:
+37.0°C = 98.6°F
+```
+
+> 🔑 **Key Learning:** `9/5` as integers gives `1` and breaks the formula. Using `double` for celsius ensures floating-point math throughout the expression.
+
+---
+
+#### ✅ Problem 4 — Swap Without Third Variable `[Medium]`
+
+**Task:** Swap `a = 25` and `b = 40` without using a temporary variable.
+
+```java
+public class P4_SwapNumbers {
+    public static void main(String[] args) {
+        int a = 25, b = 40;
+        System.out.println("Before: a = " + a + ", b = " + b);
+
+        a = a + b;   // a = 65
+        b = a - b;   // b = 65 - 40 = 25
+        a = a - b;   // a = 65 - 25 = 40
+
+        System.out.println("After : a = " + a + ", b = " + b);
+    }
+}
+```
+
+```
+Output:
+Before: a = 25, b = 40
+After : a = 40, b = 25
+```
+
+> 🔑 **Key Learning:** Store the sum in `a`, then recover each original value using subtraction. Classic arithmetic swap trick — zero extra memory.
+
+---
+
+#### ✅ Problem 5 — Type Casting Detective `[Medium]`
+
+**Task:** Predict and explain the output of two similar-looking division operations.
+
+```java
+public class P5_TypeCastingDetective {
+    public static void main(String[] args) {
+        int a = 7, b = 2;
+        double result1 = a / b;           // int division FIRST → 3 → stored as 3.0
+        double result2 = (double) a / b;  // cast FIRST → 3.5
+
+        System.out.println("result1 = " + result1);
+        System.out.println("result2 = " + result2);
+    }
+}
+```
+
+```
+Output:
+result1 = 3.0
+result2 = 3.5
+```
+
+> 🔑 **Key Learning:** Java evaluates `a / b` as integers first (= 3), THEN converts to 3.0. Casting `(double) a` before the division changes the entire operation to floating-point.
+
+---
+
+#### ✅ Problem 6 — Even or Odd Without if-else `[Medium]`
+
+**Task:** Check even/odd using only modulo and a boolean. No if-else allowed.
+
+```java
+public class P6_EvenOdd {
+    public static void main(String[] args) {
+        int n = 29;
+        boolean isEven = (n % 2 == 0);
+        System.out.println(n + " is even: " + isEven);
+    }
+}
+```
+
+```
+Output:
+29 is even: false
+```
+
+> 🔑 **Key Learning:** `n % 2 == 0` is itself a boolean expression — it evaluates to `true` or `false` directly. Modulo is essential for even/odd checks, divisibility, digit extraction, and circular indexing in arrays.
+
+---
+
+### ⚡ MINI CHALLENGE — Solved ✅
+
+**Problem:** A shopkeeper sells apples at ₹15 each. A customer buys 47 apples and pays ₹1000. Calculate total cost and change.
+
+```java
+public class MiniChallenge_Day1 {
+    public static void main(String[] args) {
+        int pricePerApple = 15;
+        int applesBought  = 47;
+        int amountPaid    = 1000;
+
+        int totalCost = pricePerApple * applesBought;
+        int change    = amountPaid - totalCost;
+
+        System.out.println("Total: ₹" + totalCost + " | Change: ₹" + change);
+    }
+}
+```
+
+```
+Output:
+Total: ₹705 | Change: ₹295
+```
+
+> 🔑 **Key Learning:** Real-world problems map cleanly to variables + operators. Breaking a problem into small mathematical steps is the foundation of all programming logic.
+
+---
+
+### 🔁 REVISION TASKS — Completed ✅
+
+| Task | Status |
+|------|--------|
+| Re-wrote Hello World program from memory | ✅ |
+| Listed all 8 primitive types with sizes from memory | ✅ |
+| Explained type casting in own words without notes | ✅ |
+| Re-coded all operator examples without looking | ✅ |
+
+---
+
+### ❓ REFLECTION QUESTIONS — Answered ✅
+
+<details>
+<summary><b>Q1. What is the difference between float and double?</b></summary>
+
+> `float` uses **4 bytes** and gives **6–7 digits** of decimal precision. Needs `f` suffix: `3.14f`
+> `double` uses **8 bytes** and gives **15 digits** of precision. Default decimal type in Java.
+> Use `double` for most calculations. Use `float` only when memory is critically constrained (e.g., millions of values in an array).
+
+</details>
+
+<details>
+<summary><b>Q2. What is the difference between = and == in Java?</b></summary>
+
+> `=` is the **assignment operator** — stores a value into a variable. Example: `int x = 5;`
+> `==` is the **equality comparison operator** — checks if two values are equal, returns `true` or `false`. Example: `x == 5` → `true`
+> Accidentally using `=` instead of `==` inside conditions is one of the most common beginner bugs.
+
+</details>
+
+<details>
+<summary><b>Q3. Why does 10/3 give 3 in Java? How to fix it?</b></summary>
+
+> When BOTH operands are `int`, Java performs **integer division** — the decimal part is discarded (not rounded, just cut off).
+> Fix options: cast one to double before dividing:
+> - `(double) 10 / 3` → `3.3333`
+> - `10.0 / 3` → `3.3333`
+> - `10 / 3.0` → `3.3333`
+
+</details>
+
+<details>
+<summary><b>Q4. What is Type Casting? Give a real-life analogy.</b></summary>
+
+> Type casting = **converting a value from one data type to another**.
+> **Widening (auto):** Pouring water from a small cup into a big bucket — safe, no overflow.
+> **Narrowing (manual):** Pouring from a big bucket into a small cup — it overflows, data is lost.
+> Real analogy: Saving a 4K video as a 360p file. The 360p file is smaller but loses quality (narrowing). The original 4K is untouched (widening going back would just take up space).
+
+</details>
+
+<details>
+<summary><b>Q5. What is the modulo operator % useful for in programming?</b></summary>
+
+> `%` gives the **remainder** after division. Core use cases:
+> - **Even/Odd check:** `n % 2 == 0` → even
+> - **Divisibility:** `n % 5 == 0` → divisible by 5
+> - **Extract last digit:** `n % 10` → last digit of any number
+> - **Circular indexing:** `index % size` — keeps index inside bounds (used in arrays, queues, clocks)
+
+</details>
+
+---
+
+### 🛠️ SETUP INSTRUCTIONS — Completed ✅
+
+| Setup Task | Status |
+|------------|--------|
+| JDK 17+ downloaded and installed | ✅ |
+| IDE installed (VS Code + Java Extension Pack / IntelliJ IDEA) | ✅ |
+| `java -version` verified in terminal | ✅ |
+| `javac -version` verified in terminal | ✅ |
+| First `.java` file compiled and run successfully | ✅ |
+
+**Installation steps used:**
+1. Downloaded JDK 17 from [oracle.com/java](https://www.oracle.com/java/technologies/downloads/)
+2. Installed with default settings
+3. Verified in terminal: `java -version` → `java version "17.x.x"`
+4. Installed IntelliJ IDEA Community Edition (free)
+5. Created first project → wrote Hello World → ran successfully ✅
+
+---
+
+### 📌 DAY 1 SUMMARY CARD
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                     📅  DAY 1 — SUMMARY                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Date        :  March 30, 2025                                  ║
+║  Phase       :  Phase 1 — Java Fundamentals                     ║
+║  Hours Spent :  5 Hours                                         ║
+║  Status      :  ✅ COMPLETED                                     ║
+╠══════════════════════════════════════════════════════════════════╣
+║  CONCEPTS COVERED                                               ║
+║  ✅  How Java works — JDK → Bytecode → JVM → Output             ║
+║  ✅  Basic program structure and every keyword explained         ║
+║  ✅  8 Primitive Data Types + String (non-primitive)             ║
+║  ✅  Variables — declaration and initialization                  ║
+║  ✅  Widening (auto) vs Narrowing (manual) Type Casting          ║
+║  ✅  Arithmetic Operators  ( +  -  *  /  % )                    ║
+║  ✅  Relational Operators  ( ==  !=  >  <  >=  <= )             ║
+║  ✅  Logical Operators     ( &&  ||  ! )                        ║
+║  ✅  Increment / Decrement ( ++  -- ) pre and post              ║
+║  ✅  Assignment Operators  ( +=  -=  *=  /=  %= )              ║
+╠══════════════════════════════════════════════════════════════════╣
+║  PRACTICE SET       :  6 / 6 Solved  ✅                         ║
+║  MINI CHALLENGE     :  ✅ Completed  (Shopkeeper Problem)        ║
+║  REVISION TASKS     :  ✅ Completed  (All 4 tasks)               ║
+║  REFLECTION         :  ✅ All 5 questions answered               ║
+║  SETUP              :  ✅ JDK + IDE + First program running      ║
+╠══════════════════════════════════════════════════════════════════╣
+║  CONFIDENCE LEVEL   :  ████████░░  80%                          ║
+║  STRONG AREA        :  Operators, Type Casting logic             ║
+║  WEAK AREA          :  Post vs Pre increment in complex exprs   ║
+╠══════════════════════════════════════════════════════════════════╣
+║  KEY TAKEAWAYS                                                  ║
+║  ▸  Integer division silently drops decimals — very tricky bug  ║
+║  ▸  Always cast BEFORE dividing, not after                      ║
+║  ▸  = (assign) vs == (compare) — never confuse these            ║
+║  ▸  % (modulo) is one of the most used operators in DSA         ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+---
 
 ---
 
@@ -278,15 +798,15 @@ Remaining   : 159
 ## 📝 Weekly Reflections
 
 <details>
-<summary><b>Week 1 (Day 1–7)</b></summary>
+<summary><b>Week 1 (Day 1–7) — In Progress 🔄</b></summary>
 
 ```
-Topics Covered   : [To be filled]
-Problems Solved  : [To be filled]
-Strong Areas     : [To be filled]
-Weak Areas       : [To be filled]
-Key Takeaway     : [To be filled]
-Goal for Week 2  : [To be filled]
+Topics Covered   : Variables, Data Types, Type Casting, Operators (Day 1) ✅
+Problems Solved  : 6
+Strong Areas     : Arithmetic operators, type casting logic, modulo use cases
+Weak Areas       : Pre vs Post increment in complex expressions
+Key Takeaway     : Integer division is the most common silent bug for beginners
+Goal for Week 2  : Master conditionals, loops, and write pattern programs
 ```
 
 </details>
@@ -305,8 +825,6 @@ Goal for Week 3  : [To be filled]
 
 </details>
 
-> *More weeks will be added as I progress...*
-
 ---
 
 ## ❌ Mistakes & Learnings Log
@@ -315,7 +833,8 @@ Goal for Week 3  : [To be filled]
 
 | # | Date | Topic | Mistake Made | Root Cause | Fix / Learning |
 |---|------|-------|-------------|------------|----------------|
-| 1 | — | — | — | — | — |
+| 1 | Mar 30 | Type Casting | `double r = a/b` gave `3.0` not `3.5` | Division executed as int before storing in double | Cast operand BEFORE dividing: `(double)a / b` |
+| 2 | Mar 30 | Formula | `9/5` inside formula gave `1` | Both are int literals → integer division | Use `9.0/5` or ensure one operand is `double` |
 
 ---
 
@@ -335,10 +854,10 @@ Goal for Week 3  : [To be filled]
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
+| Custom Daily Problems | 3 | 3 | 0 | 6 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| Coding Ninjas | 0 | 0 | 0 | 0 |
-| **Total** | **0** | **0** | **0** | **0** |
+| **Total** | **3** | **3** | **0** | **6** |
 
 ---
 
@@ -349,17 +868,17 @@ Goal for Week 3  : [To be filled]
 
 ```java
 // Primitive Types
-byte   b = 100;           // 1 byte  | -128 to 127
-short  s = 1000;          // 2 bytes | -32768 to 32767
-int    i = 50000;         // 4 bytes | ~-2.1B to 2.1B
-long   l = 99999999L;     // 8 bytes | Very large range
-float  f = 3.14f;         // 4 bytes | 6-7 decimal digits
-double d = 3.14159265;    // 8 bytes | 15 decimal digits
-char   c = 'A';           // 2 bytes | Single character
+byte    b = 100;          // 1 byte  | -128 to 127
+short   s = 1000;         // 2 bytes | -32768 to 32767
+int     i = 50000;        // 4 bytes | ~-2.1B to 2.1B
+long    l = 99999999L;    // 8 bytes | Very large range
+float   f = 3.14f;        // 4 bytes | 6-7 decimal digits
+double  d = 3.14159265;   // 8 bytes | 15 decimal digits
+char    c = 'A';          // 2 bytes | Single character
 boolean flag = true;      // 1 bit   | true or false
 
 // Non-Primitive
-String name = "Java";     // Object, not primitive
+String name = "Java";     // Object, not primitive — default null
 ```
 
 </details>
@@ -390,6 +909,27 @@ condition ? valueIfTrue : valueIfFalse;
 </details>
 
 <details>
+<summary><b>Type Casting Rules</b></summary>
+
+```java
+// Widening — Automatic (no data loss)
+// byte → short → int → long → float → double
+int x = 100;
+double d = x;       // OK: 100.0
+
+// Narrowing — Manual (may lose data)
+double d = 9.99;
+int x = (int) d;    // x = 9 (truncated, NOT rounded!)
+
+// Fix integer division
+int a = 7, b = 2;
+double r  = (double) a / b;  // 3.5 ✅ cast BEFORE dividing
+double r2 = a / b;           // 3.0 ❌ too late, int division already done
+```
+
+</details>
+
+<details>
 <summary><b>Loop Structures</b></summary>
 
 ```java
@@ -402,7 +942,7 @@ while (condition) { }
 // Do-While Loop
 do { } while (condition);
 
-// Enhanced For (for arrays/collections)
+// Enhanced For (arrays/collections)
 for (int x : array) { }
 ```
 
@@ -412,13 +952,13 @@ for (int x : array) { }
 <summary><b>Big-O Complexity Reference</b></summary>
 
 ```
-O(1)       → Constant   — Best
+O(1)       → Constant    — Best
 O(log n)   → Logarithmic
 O(n)       → Linear
 O(n log n) → Linearithmic
 O(n²)      → Quadratic
 O(2ⁿ)      → Exponential
-O(n!)      → Factorial  — Worst
+O(n!)      → Factorial   — Worst
 ```
 
 | Algorithm | Best | Average | Worst |
@@ -463,7 +1003,7 @@ O(n!)      → Factorial  — Worst
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Started: March 30, 2025**
+**Day 1 of 160 — Done ✅**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
