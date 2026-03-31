@@ -780,7 +780,6 @@ System.out.println("Result: " + (2 + 3));    // → "Result: 5"
 ║  ▸  Complex problems = small independent reusable steps          ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
-
 ---
 
 <div align="center">
