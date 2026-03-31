@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-3_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-2_Days_🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-5_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-4_Days_🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -138,31 +138,24 @@ Phase 5 ──────── Interview Prep           [Day 141–160]  ⏳ U
 ```
 java-dsa-journey/
 │
-├── README.md                              ← 🏠 Master Dashboard (this file)
+├── README.md                                  ← 🏠 Master Dashboard (this file)
 │
 ├── Phase-1_Java-Fundamentals/
-│   ├── Day01_Variables_DataTypes.md       ← ✅ Full Day 1 Report
-│   ├── Day02_Conditionals.md             ← ✅ Full Day 2 Report
-│   ├── Day03_Loops.md                    ← 🔄 Full Day 3 Report
-│   ├── Day04_Loops_Patterns.md           ← ⏳
+│   ├── Day01_Variables_DataTypes.md           ← ✅ Complete
+│   ├── Day02_Conditionals.md                  ← ✅ Complete
+│   ├── Day03_Loops.md                         ← ✅ Complete
+│   ├── Day04_Loops_Patterns.md                ← ✅ Complete
+│   ├── Day05_Loops_Revision.md                ← ⏳
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
-│   └── ...
-│
 ├── Phase-3_Core-DSA/
-│   └── ...
-│
 ├── Phase-4_Advanced-DSA/
-│   └── ...
-│
 ├── Phase-5_Interview-Prep/
-│   └── ...
 │
 ├── Cheatsheets/
 │   ├── Java_Quick_Reference.md
 │   ├── Big-O_Complexity.md
-│   ├── Sorting_Algorithms.md
 │   └── DSA_Patterns.md
 │
 └── Mistakes-and-Learnings/
@@ -177,18 +170,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 2
-In Progress : 1 (Day 3)
-Remaining   : 157
+Completed   : 4
+Remaining   : 156
 
-[██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 1.25%
+[████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 2.5%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██░░░░░░░░` 10% | 2 | 21 |
+| Phase 1 — Java Fundamentals | `████░░░░░░` 19% | 4 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -204,11 +196,12 @@ Remaining   : 157
 |-----|------|-------|----------|--------|
 | [01](./Phase-1_Java-Fundamentals/Day01_Variables_DataTypes.md) | Mar 30, 2025 | Variables, Data Types, Type Casting, Operators | 6 | ✅ Completed |
 | [02](./Phase-1_Java-Fundamentals/Day02_Conditionals.md) | Mar 31, 2025 | Conditionals — if, else-if, switch, ternary | 6 | ✅ Completed |
-| [03](./Phase-1_Java-Fundamentals/Day03_Loops.md) | Apr 01, 2025 | Loops — for, while, do-while, break, continue | 6 | 🔄 In Progress |
-| 04 | — | Loop Patterns + Nested Loops | — | ⏳ |
-| 05 | — | Loop Problems + Revision | — | ⏳ |
-| 06 | — | Functions / Methods | — | ⏳ |
-| 07 | — | Scope + Recursion Intro | — | ⏳ |
+| [03](./Phase-1_Java-Fundamentals/Day03_Loops.md) | Apr 01, 2025 | Loops — for, while, do-while, break, continue | 6 | ✅ Completed |
+| [04](./Phase-1_Java-Fundamentals/Day04_Loops_Patterns.md) | Apr 02, 2025 | Loop Patterns — triangles, pyramid, Floyd's, hollow | 6 | ✅ Completed |
+| 05 | — | Functions & Methods | — | ⏳ Upcoming |
+| 05 | — | Loop Revision + Mixed Problems | — | ⏳ Upcoming |
+| 06 | — | Functions / Methods | — | ⏳ Upcoming |
+| 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
 ---
 
@@ -216,10 +209,10 @@ Remaining   : 157
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 5 | 6 | 1 | 12 |
+| Custom Daily Problems | 8 | 12 | 4 | 24 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **5** | **6** | **1** | **12** |
+| **Total** | **8** | **12** | **4** | **24** |
 
 ---
 
@@ -229,10 +222,13 @@ Remaining   : 157
 - [x] How Java works — JDK, JVM, JRE, Bytecode
 - [x] Variables & all 8 Primitive Data Types
 - [x] Type Casting — Widening & Narrowing
-- [x] All Operators — Arithmetic, Relational, Logical, Bitwise, Ternary
+- [x] All Operators — Arithmetic, Relational, Logical, Increment, Assignment, Ternary
 - [x] Conditionals — if, if-else, if-else-if, nested if, switch-case
 - [x] String comparison — `.equals()` vs `==`
-- [ ] Loops — for, while, do-while
+- [x] Loops — for, while, do-while, break, continue, nested loops
+- [x] Loop Patterns — triangles, pyramids, Floyd's, hollow shapes, diamond
+- [x] Loop control — break, continue
+- [x] Essential patterns — sum, factorial, digit ops, reverse, Fibonacci
 - [ ] Functions & Methods
 - [ ] Arrays (1D + 2D)
 - [ ] Strings & StringBuilder
@@ -259,15 +255,18 @@ Remaining   : 157
 
 ## ❌ Mistakes & Learnings Log
 
-> Every mistake documented = one less bug in the future.
-
-| # | Day | Topic | Mistake | Fix |
-|---|-----|-------|---------|-----|
+| # | Day | Topic | Mistake | Fix / Learning |
+|---|-----|-------|---------|----------------|
 | 1 | Day 1 | Type Casting | `double r = a/b` gave `3.0` not `3.5` | Cast BEFORE dividing: `(double)a / b` |
-| 2 | Day 1 | Formula | `9/5` gave `1` (int division) | Use `9.0/5` or `double` variable |
-| 3 | Day 2 | String Compare | Used `==` to compare Strings | Always use `.equals()` |
-| 4 | Day 2 | Ladder Order | Checked `% 4` before `% 400` in leap year | `% 400` → `% 100` → `% 4` order is critical |
-| 5 | Day 2 | String + int | `"Java" + 5 + 3` gave `"Java53"` not `"Java8"` | `+` is left-to-right; use `(5+3)` to force arithmetic |
+| 2 | Day 1 | Formula | `9/5` in formula gave `1` (int division) | Use `9.0/5` or `double` variable |
+| 3 | Day 2 | String Compare | Used `==` to compare Strings | Always use `.equals()` for Strings |
+| 4 | Day 2 | Ladder Order | Checked `% 4` before `% 400` in leap year | `% 400` → `% 100` → `% 4` — order is critical |
+| 5 | Day 2 | String + int | `"Java"+5+3` gave `"Java53"` not `"Java8"` | `+` is left-to-right — use `(5+3)` to force arithmetic |
+| 6 | Day 3 | Prime Check | Looped up to `n` instead of `√n` | Use `i * i <= n` — O(√n) is sufficient |
+| 7 | Day 3 | Math.pow | `Math.pow(d, digits)` stored as `int` lost decimal | Always cast: `(int) Math.pow(d, digits)` |
+| 8 | Day 4 | Pyramid | Forgot second inner loop for spaces | Pyramid needs TWO inner loops: spaces + stars |
+| 9 | Day 4 | Diamond | Tried single loop for both halves | Decompose: top half (i:1→n) + bottom half (i:n-1→1) |
+| 10 | Day 4 | Floyd's | Put counter inside outer loop — reset each row | Counter must be OUTSIDE both loops to persist |
 
 ---
 
@@ -301,9 +300,7 @@ Remaining   : 157
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ranjanow)
 
 </div>
 
@@ -313,7 +310,7 @@ Remaining   : 157
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 2 of 160 Complete ✅ &nbsp;|&nbsp; 12 Problems Solved &nbsp;|&nbsp; Streak: 2 Days 🔥**
+**Day 4 of 160 Complete ✅ &nbsp;|&nbsp; 24 Problems Solved &nbsp;|&nbsp; Streak: 4 Days 🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
