@@ -511,7 +511,6 @@ Total: ₹705 | Change: ₹295
 ║  ▸  % (modulo) is one of the most used operators in DSA         ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
-
 ---
 
 <div align="center">
