@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Day](https://img.shields.io/badge/Current_Day-1_of_160-blueviolet?style=for-the-badge)
+![Day](https://img.shields.io/badge/Current_Day-2_of_160-blueviolet?style=for-the-badge)
 
 <br/>
 
@@ -60,8 +60,8 @@ Phase 5 ────────────────────────
 
 | Days | Topic | Status |
 |------|-------|--------|
-| Day 01–02 | Variables, Data Types, Type Casting, Operators | 🔄 In Progress |
-| Day 03–05 | Conditionals (if-else, switch), Loops (for, while, do-while) | ⬜ |
+| Day 01–02 | Variables, Data Types, Type Casting, Operators, Conditionals | ✅ Completed |
+| Day 03–05 | Loops (for, while, do-while) + Patterns | 🔄 In Progress |
 | Day 06–08 | Functions/Methods, Scope, Recursion Intro | ⬜ |
 | Day 09–12 | Arrays (1D + 2D), Array Manipulation | ⬜ |
 | Day 13–15 | Strings (Methods, StringBuilder, Patterns) | ⬜ |
@@ -149,8 +149,16 @@ java-dsa-journey/
 │   │       ├── P4_SwapNumbers.java
 │   │       ├── P5_TypeCastingDetective.java
 │   │       └── P6_EvenOdd.java
-│   ├── Day02_Operators/
-│   ├── Day03-05_Conditionals_Loops/
+│   ├── Day02_Conditionals/
+│   │   ├── Notes.md
+│   │   └── Problems/
+│   │       ├── P1_PositiveNegativeZero.java
+│   │       ├── P2_LargestOfThree.java
+│   │       ├── P3_GradeCalculator.java
+│   │       ├── P4_SimpleCalculatorSwitch.java
+│   │       ├── P5_LeapYear.java
+│   │       └── P6_TriangleClassifier.java
+│   ├── Day03-05_Loops/
 │   ├── Day06-08_Functions_Recursion/
 │   ├── Day09-12_Arrays/
 │   ├── Day13-15_Strings/
@@ -161,20 +169,13 @@ java-dsa-journey/
 ├── 📂 Phase-3_Core-DSA/
 ├── 📂 Phase-4_Advanced-DSA/
 ├── 📂 Phase-5_Interview-Prep/
-│
 ├── 📂 Weekly-Progress/
-│   ├── Week01_Review.md
-│   └── ...
-│
 ├── 📂 Mistakes-and-Learnings/
 │   └── ErrorLog.md
-│
 ├── 📂 Cheatsheets/
 │   ├── Java_Syntax_Cheatsheet.md
 │   ├── Big-O_Complexity.md
-│   ├── Sorting_Algorithms.md
 │   └── DSA_Patterns.md
-│
 └── README.md
 ```
 
@@ -186,17 +187,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 1
-Remaining   : 159
+Completed   : 2
+Remaining   : 158
 
-[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0.6%
+[██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 1.25%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `█░░░░░░░░░` 5% | 1 | 21 |
+| Phase 1 — Java Fundamentals | `██░░░░░░░░` 10% | 2 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -209,8 +210,9 @@ Remaining   : 159
 | Day | Date | Topic | Problems Solved | Status | Notes |
 |-----|------|-------|----------------|--------|-------|
 | [01](#-day-1--march-30-2025) | Mar 30, 2025 | Variables, Data Types, Type Casting, Operators | 6 | ✅ Completed | Strong start! |
-| 02 | — | — | — | ⏳ Upcoming | — |
-| 03 | — | — | — | ⏳ Upcoming | — |
+| [02](#-day-2--march-31-2025) | Mar 31, 2025 | Conditionals — if, else-if, switch, ternary | 6 | ✅ Completed | Logic building clicked! |
+| 03 | — | Loops — for, while, do-while | — | ⏳ Upcoming | — |
+| 04 | — | Loop Patterns + Nested Loops | — | ⏳ Upcoming | — |
 
 ---
 
@@ -235,7 +237,7 @@ Remaining   : 159
 ---
 
 ### 🎯 Day 1 Goal
-> Understand how Java works, set up the environment, master variables, data types, type casting, and operators — then **write code**, not just read it.
+> Understand how Java works, set up the environment, master variables, data types, type casting, and operators.
 
 ---
 
@@ -257,24 +259,17 @@ Remaining   : 159
 
 #### 🔷 1. How Java Works
 
-Java is a **compiled + interpreted** language. This makes it platform-independent.
-
 ```
-Your Code (.java)
-      ↓  javac (Java Compiler)
-Bytecode (.class)
-      ↓  JVM (Java Virtual Machine)
-Output on ANY Machine
+Your Code (.java) → javac → Bytecode (.class) → JVM → Output
 ```
 
-| Term | Full Form | Role |
-|------|-----------|------|
-| **JDK** | Java Development Kit | Write and compile Java code |
-| **JRE** | Java Runtime Environment | Run Java programs |
-| **JVM** | Java Virtual Machine | Converts bytecode → machine code |
-| **Bytecode** | — | Intermediate `.class` file |
+| Term | Role |
+|------|------|
+| **JDK** | Write and compile Java code |
+| **JRE** | Run Java programs |
+| **JVM** | Converts bytecode → machine code |
 
-> 💡 **Key Insight:** Java's "Write Once, Run Anywhere" works because JVM is platform-specific, but bytecode is universal.
+> 💡 "Write Once, Run Anywhere" — JVM is platform-specific, bytecode is universal.
 
 ---
 
@@ -288,428 +283,203 @@ public class Main {
 }
 ```
 
-**Every keyword explained:**
-
 | Keyword | Meaning |
 |---------|---------|
-| `public` | Access modifier — anyone can access this |
+| `public` | Anyone can access this |
 | `class Main` | Every Java program lives inside a class |
 | `static` | Belongs to the class, not an object |
-| `void` | This method returns no value |
-| `main` | Entry point — JVM starts execution here |
-| `String[] args` | Command-line arguments array |
-| `System.out.println` | Prints to console WITH new line |
-| `System.out.print` | Prints to console WITHOUT new line |
+| `void` | Returns no value |
+| `main` | JVM starts execution here |
+| `System.out.println` | Print with new line |
 
 ---
 
 #### 🔷 3. Variables & Data Types
 
-A **variable** is a named memory container that stores a value.
-
 ```java
-// Syntax: dataType variableName = value;
-int age = 20;
-double price = 99.99;
-char grade = 'A';
-boolean isPass = true;
-String name = "Rahul";   // Non-primitive (Object)
+int age = 20;          double price = 99.99;
+char grade = 'A';      boolean isPass = true;
+String name = "Rahul"; // Non-primitive
 ```
 
 ---
 
-#### 🔷 4. Primitive Data Types — Complete Table
+#### 🔷 4. Primitive Data Types Table
 
-| Type | Size | Default | Range | Example |
-|------|------|---------|-------|---------|
-| `byte` | 1 byte | 0 | -128 to 127 | `byte b = 100;` |
-| `short` | 2 bytes | 0 | -32,768 to 32,767 | `short s = 1000;` |
-| `int` | 4 bytes | 0 | -2,147,483,648 to 2,147,483,647 | `int x = 500;` |
-| `long` | 8 bytes | 0L | Very large | `long l = 99999L;` |
-| `float` | 4 bytes | 0.0f | 6–7 decimal digits | `float f = 3.14f;` |
-| `double` | 8 bytes | 0.0d | 15 decimal digits | `double d = 3.14159;` |
-| `char` | 2 bytes | '\u0000' | Single character | `char c = 'A';` |
-| `boolean` | 1 bit | false | true / false | `boolean b = true;` |
-
-> 📌 **Non-Primitive:** `String`, Arrays, Classes — stored as objects in heap memory. Default value is `null`.
-
-**Primitive vs Non-Primitive:**
-
-| Feature | Primitive | Non-Primitive |
-|---------|-----------|---------------|
-| Stores | Actual value | Memory address (reference) |
-| Memory | Stack | Heap |
-| Example | `int`, `char`, `boolean` | `String`, Arrays, Classes |
-| Default | 0 / false | `null` |
+| Type | Size | Range | Example |
+|------|------|-------|---------|
+| `byte` | 1 byte | -128 to 127 | `byte b = 100;` |
+| `short` | 2 bytes | -32,768 to 32,767 | `short s = 1000;` |
+| `int` | 4 bytes | ~-2.1B to 2.1B | `int x = 500;` |
+| `long` | 8 bytes | Very large | `long l = 99999L;` |
+| `float` | 4 bytes | 6–7 decimal digits | `float f = 3.14f;` |
+| `double` | 8 bytes | 15 decimal digits | `double d = 3.14159;` |
+| `char` | 2 bytes | Single character | `char c = 'A';` |
+| `boolean` | 1 bit | true / false | `boolean b = true;` |
 
 ---
 
 #### 🔷 5. Type Casting
 
-Converting a value from one data type to another.
-
-**Widening — Automatic (small → big, NO data loss)**
-
 ```java
-int x = 100;
-long l = x;      // int → long  ✅ automatic
-double d = x;    // int → double ✅ automatic
+// Widening — Automatic (no loss)
+int x = 100;  double d = x;     // 100.0 ✅
 
-// Safe widening order:
-// byte → short → int → long → float → double
-```
+// Narrowing — Manual (may lose data)
+double d = 9.99;  int x = (int) d;  // x = 9 ← truncated!
 
-**Narrowing — Manual (big → small, possible data loss)**
-
-```java
-double d = 9.99;
-int x = (int) d;     // x = 9  ← decimal TRUNCATED (NOT rounded!)
-
-float f = 3.99f;
-int i = (int) f;     // i = 3  ← always truncates
-```
-
-> ⚠️ **Critical Rule:** Narrowing TRUNCATES — `(int) 3.9 = 3`, NOT `4`.
-
-```java
-// Most Common Bug — Integer Division
-int a = 7, b = 2;
-double result1 = a / b;           // → 3.0  ❌ (int division done FIRST)
-double result2 = (double) a / b;  // → 3.5  ✅ (cast BEFORE dividing)
+// Fix integer division bug
+double r = (double) a / b;   // cast BEFORE dividing ✅
+double r = a / b;            // division done as int first ❌
 ```
 
 ---
 
 #### 🔷 6. Operators
 
-**A. Arithmetic Operators**
-
 ```java
-int a = 10, b = 3;
-System.out.println(a + b);   // 13  — Addition
-System.out.println(a - b);   // 7   — Subtraction
-System.out.println(a * b);   // 30  — Multiplication
-System.out.println(a / b);   // 3   — Integer division (decimal dropped!)
-System.out.println(a % b);   // 1   — Remainder (Modulo)
+// Arithmetic  : + - * / %
+// Relational  : == != > < >= <=
+// Logical     : && || !
+// Increment   : x++ (post)  ++x (pre)
+// Assignment  : += -= *= /= %=
 ```
 
-**B. Relational Operators — Always returns boolean**
+> ⚠️ `=` is assignment. `==` is comparison. Never confuse!
 
+---
+
+### 🧠 PRACTICE SET — 6 / 6 Solved ✅
+
+#### ✅ P1 — Hello Programmer `[Easy]`
 ```java
-System.out.println(10 > 3);    // true
-System.out.println(10 < 3);    // false
-System.out.println(10 >= 10);  // true
-System.out.println(10 <= 9);   // false
-System.out.println(10 == 10);  // true
-System.out.println(10 != 5);   // true
+String name = "Rahul";  int age = 20;
+System.out.println("My name is " + name + " and I am " + age + " years old.");
+// Output: My name is Rahul and I am 20 years old.
 ```
+> 🔑 `+` concatenates String with int — Java auto-converts.
 
-> ⚠️ `=` is **assignment**. `==` is **comparison**. Never confuse these!
+---
 
-**C. Logical Operators**
-
+#### ✅ P2 — Simple Calculator `[Easy]`
 ```java
-System.out.println(true && true);    // true  — AND: both must be true
-System.out.println(true && false);   // false
-System.out.println(true || false);   // true  — OR: at least one true
-System.out.println(false || false);  // false
-System.out.println(!true);           // false — NOT: reverses
-System.out.println(!false);          // true
+int a = 17, b = 5;
+System.out.println("Addition       : " + (a + b));   // 22
+System.out.println("Subtraction    : " + (a - b));   // 12
+System.out.println("Multiplication : " + (a * b));   // 85
+System.out.println("Division       : " + (a / b));   // 3
+System.out.println("Remainder      : " + (a % b));   // 2
+System.out.println("Decimal Div    : " + ((double) a / b)); // 3.4
 ```
+> 🔑 `17/5 = 3` (int division). Cast to get `3.4`.
 
-**D. Increment & Decrement Operators**
+---
 
+#### ✅ P3 — Temperature Converter `[Easy-Medium]`
 ```java
-int x = 5;
-System.out.println(x++);   // prints 5, THEN x becomes 6  (post-increment)
-System.out.println(++x);   // x becomes 7, THEN prints 7  (pre-increment)
-System.out.println(x--);   // prints 7, THEN x becomes 6  (post-decrement)
-System.out.println(--x);   // x becomes 5, THEN prints 5  (pre-decrement)
+double celsius = 37.0;
+double fahrenheit = (celsius * 9 / 5) + 32;
+System.out.println(celsius + "°C = " + fahrenheit + "°F");
+// Output: 37.0°C = 98.6°F
 ```
+> 🔑 Using `double` prevents `9/5` becoming `1` (int division bug).
 
-**E. Assignment Operators**
+---
 
+#### ✅ P4 — Swap Without Third Variable `[Medium]`
 ```java
-int x = 10;
-x += 5;    // x = 15
-x -= 3;    // x = 12
-x *= 2;    // x = 24
-x /= 4;    // x = 6
-x %= 4;    // x = 2
+int a = 25, b = 40;
+a = a + b;   // 65
+b = a - b;   // 25
+a = a - b;   // 40
+// Before: a=25, b=40 → After: a=40, b=25
+```
+> 🔑 Arithmetic swap — store sum, recover each value by subtraction.
+
+---
+
+#### ✅ P5 — Type Casting Detective `[Medium]`
+```java
+double result1 = a / b;           // 3.0 ❌ int division first
+double result2 = (double) a / b;  // 3.5 ✅ cast before dividing
+```
+> 🔑 Order of operations determines type of arithmetic performed.
+
+---
+
+#### ✅ P6 — Even or Odd Without if-else `[Medium]`
+```java
+int n = 29;
+boolean isEven = (n % 2 == 0);
+System.out.println(n + " is even: " + isEven);
+// Output: 29 is even: false
+```
+> 🔑 `n % 2 == 0` is itself a boolean — no if-else needed.
+
+---
+
+### ⚡ MINI CHALLENGE — ✅ Solved
+```java
+// Shopkeeper: apples ₹15 each, 47 bought, paid ₹1000
+int totalCost = 15 * 47;        // 705
+int change    = 1000 - 705;     // 295
+System.out.println("Total: ₹" + totalCost + " | Change: ₹" + change);
+// Output: Total: ₹705 | Change: ₹295
 ```
 
 ---
 
-### 🧠 PRACTICE SET — All 6 Problems Solved ✅
-
----
-
-#### ✅ Problem 1 — Hello Programmer `[Easy]`
-
-**Task:** Store name and age in variables, print a formatted sentence.
-
-```java
-public class P1_HelloProgrammer {
-    public static void main(String[] args) {
-        String name = "Rahul";
-        int age = 20;
-        System.out.println("My name is " + name + " and I am " + age + " years old.");
-    }
-}
-```
-
-```
-Output:
-My name is Rahul and I am 20 years old.
-```
-
-> 🔑 **Key Learning:** `+` operator concatenates String with other types. Java auto-converts `int` to String when joining with `+`.
-
----
-
-#### ✅ Problem 2 — Simple Calculator `[Easy]`
-
-**Task:** Perform all arithmetic operations on `a = 17`, `b = 5`.
-
-```java
-public class P2_SimpleCalculator {
-    public static void main(String[] args) {
-        int a = 17, b = 5;
-        System.out.println("Addition       : " + (a + b));
-        System.out.println("Subtraction    : " + (a - b));
-        System.out.println("Multiplication : " + (a * b));
-        System.out.println("Division       : " + (a / b));
-        System.out.println("Remainder      : " + (a % b));
-        System.out.println("Decimal Div    : " + ((double) a / b));
-    }
-}
-```
-
-```
-Output:
-Addition       : 22
-Subtraction    : 12
-Multiplication : 85
-Division       : 3
-Remainder      : 2
-Decimal Div    : 3.4
-```
-
-> 🔑 **Key Learning:** `17/5 = 3` (integer division). Cast one operand to `double` to get `3.4`.
-
----
-
-#### ✅ Problem 3 — Temperature Converter `[Easy-Medium]`
-
-**Task:** Convert Celsius to Fahrenheit. Formula: `F = (C × 9/5) + 32`
-
-```java
-public class P3_TemperatureConverter {
-    public static void main(String[] args) {
-        double celsius = 37.0;
-        double fahrenheit = (celsius * 9 / 5) + 32;
-        System.out.println(celsius + "°C = " + fahrenheit + "°F");
-    }
-}
-```
-
-```
-Output:
-37.0°C = 98.6°F
-```
-
-> 🔑 **Key Learning:** `9/5` as integers gives `1` and breaks the formula. Using `double` for celsius ensures floating-point math throughout the expression.
-
----
-
-#### ✅ Problem 4 — Swap Without Third Variable `[Medium]`
-
-**Task:** Swap `a = 25` and `b = 40` without using a temporary variable.
-
-```java
-public class P4_SwapNumbers {
-    public static void main(String[] args) {
-        int a = 25, b = 40;
-        System.out.println("Before: a = " + a + ", b = " + b);
-
-        a = a + b;   // a = 65
-        b = a - b;   // b = 65 - 40 = 25
-        a = a - b;   // a = 65 - 25 = 40
-
-        System.out.println("After : a = " + a + ", b = " + b);
-    }
-}
-```
-
-```
-Output:
-Before: a = 25, b = 40
-After : a = 40, b = 25
-```
-
-> 🔑 **Key Learning:** Store the sum in `a`, then recover each original value using subtraction. Classic arithmetic swap trick — zero extra memory.
-
----
-
-#### ✅ Problem 5 — Type Casting Detective `[Medium]`
-
-**Task:** Predict and explain the output of two similar-looking division operations.
-
-```java
-public class P5_TypeCastingDetective {
-    public static void main(String[] args) {
-        int a = 7, b = 2;
-        double result1 = a / b;           // int division FIRST → 3 → stored as 3.0
-        double result2 = (double) a / b;  // cast FIRST → 3.5
-
-        System.out.println("result1 = " + result1);
-        System.out.println("result2 = " + result2);
-    }
-}
-```
-
-```
-Output:
-result1 = 3.0
-result2 = 3.5
-```
-
-> 🔑 **Key Learning:** Java evaluates `a / b` as integers first (= 3), THEN converts to 3.0. Casting `(double) a` before the division changes the entire operation to floating-point.
-
----
-
-#### ✅ Problem 6 — Even or Odd Without if-else `[Medium]`
-
-**Task:** Check even/odd using only modulo and a boolean. No if-else allowed.
-
-```java
-public class P6_EvenOdd {
-    public static void main(String[] args) {
-        int n = 29;
-        boolean isEven = (n % 2 == 0);
-        System.out.println(n + " is even: " + isEven);
-    }
-}
-```
-
-```
-Output:
-29 is even: false
-```
-
-> 🔑 **Key Learning:** `n % 2 == 0` is itself a boolean expression — it evaluates to `true` or `false` directly. Modulo is essential for even/odd checks, divisibility, digit extraction, and circular indexing in arrays.
-
----
-
-### ⚡ MINI CHALLENGE — Solved ✅
-
-**Problem:** A shopkeeper sells apples at ₹15 each. A customer buys 47 apples and pays ₹1000. Calculate total cost and change.
-
-```java
-public class MiniChallenge_Day1 {
-    public static void main(String[] args) {
-        int pricePerApple = 15;
-        int applesBought  = 47;
-        int amountPaid    = 1000;
-
-        int totalCost = pricePerApple * applesBought;
-        int change    = amountPaid - totalCost;
-
-        System.out.println("Total: ₹" + totalCost + " | Change: ₹" + change);
-    }
-}
-```
-
-```
-Output:
-Total: ₹705 | Change: ₹295
-```
-
-> 🔑 **Key Learning:** Real-world problems map cleanly to variables + operators. Breaking a problem into small mathematical steps is the foundation of all programming logic.
-
----
-
-### 🔁 REVISION TASKS — Completed ✅
-
+### 🔁 REVISION TASKS — ✅ All Completed
 | Task | Status |
 |------|--------|
-| Re-wrote Hello World program from memory | ✅ |
-| Listed all 8 primitive types with sizes from memory | ✅ |
-| Explained type casting in own words without notes | ✅ |
-| Re-coded all operator examples without looking | ✅ |
+| Re-wrote Hello World from memory | ✅ |
+| Listed all 8 primitive types with sizes | ✅ |
+| Explained type casting without notes | ✅ |
+| Re-coded operator examples without looking | ✅ |
 
 ---
 
-### ❓ REFLECTION QUESTIONS — Answered ✅
+### ❓ REFLECTION QUESTIONS — ✅ All Answered
 
 <details>
-<summary><b>Q1. What is the difference between float and double?</b></summary>
+<summary><b>Q1. float vs double?</b></summary>
 
-> `float` uses **4 bytes** and gives **6–7 digits** of decimal precision. Needs `f` suffix: `3.14f`
-> `double` uses **8 bytes** and gives **15 digits** of precision. Default decimal type in Java.
-> Use `double` for most calculations. Use `float` only when memory is critically constrained (e.g., millions of values in an array).
-
+> `float` = 4 bytes, 6–7 decimal digits, needs `f` suffix. `double` = 8 bytes, 15 digits, default decimal type. Use `double` for precision.
 </details>
 
 <details>
-<summary><b>Q2. What is the difference between = and == in Java?</b></summary>
+<summary><b>Q2. = vs == ?</b></summary>
 
-> `=` is the **assignment operator** — stores a value into a variable. Example: `int x = 5;`
-> `==` is the **equality comparison operator** — checks if two values are equal, returns `true` or `false`. Example: `x == 5` → `true`
-> Accidentally using `=` instead of `==` inside conditions is one of the most common beginner bugs.
-
+> `=` assigns a value. `==` compares two values and returns boolean. Confusing them causes silent bugs.
 </details>
 
 <details>
-<summary><b>Q3. Why does 10/3 give 3 in Java? How to fix it?</b></summary>
+<summary><b>Q3. Why does 10/3 give 3?</b></summary>
 
-> When BOTH operands are `int`, Java performs **integer division** — the decimal part is discarded (not rounded, just cut off).
-> Fix options: cast one to double before dividing:
-> - `(double) 10 / 3` → `3.3333`
-> - `10.0 / 3` → `3.3333`
-> - `10 / 3.0` → `3.3333`
-
+> Both operands are `int` → integer division (decimal dropped). Fix: `(double)10 / 3` or `10.0 / 3`.
 </details>
 
 <details>
-<summary><b>Q4. What is Type Casting? Give a real-life analogy.</b></summary>
+<summary><b>Q4. What is Type Casting?</b></summary>
 
-> Type casting = **converting a value from one data type to another**.
-> **Widening (auto):** Pouring water from a small cup into a big bucket — safe, no overflow.
-> **Narrowing (manual):** Pouring from a big bucket into a small cup — it overflows, data is lost.
-> Real analogy: Saving a 4K video as a 360p file. The 360p file is smaller but loses quality (narrowing). The original 4K is untouched (widening going back would just take up space).
-
+> Converting one data type to another. Widening = auto, safe (small→big). Narrowing = manual, may lose data (big→small). Like resizing a photo — downscale loses detail.
 </details>
 
 <details>
-<summary><b>Q5. What is the modulo operator % useful for in programming?</b></summary>
+<summary><b>Q5. What is % useful for?</b></summary>
 
-> `%` gives the **remainder** after division. Core use cases:
-> - **Even/Odd check:** `n % 2 == 0` → even
-> - **Divisibility:** `n % 5 == 0` → divisible by 5
-> - **Extract last digit:** `n % 10` → last digit of any number
-> - **Circular indexing:** `index % size` — keeps index inside bounds (used in arrays, queues, clocks)
-
+> Even/odd check, divisibility, last digit extraction, circular indexing in arrays.
 </details>
 
 ---
 
-### 🛠️ SETUP INSTRUCTIONS — Completed ✅
-
-| Setup Task | Status |
-|------------|--------|
-| JDK 17+ downloaded and installed | ✅ |
-| IDE installed (VS Code + Java Extension Pack / IntelliJ IDEA) | ✅ |
-| `java -version` verified in terminal | ✅ |
-| `javac -version` verified in terminal | ✅ |
-| First `.java` file compiled and run successfully | ✅ |
-
-**Installation steps used:**
-1. Downloaded JDK 17 from [oracle.com/java](https://www.oracle.com/java/technologies/downloads/)
-2. Installed with default settings
-3. Verified in terminal: `java -version` → `java version "17.x.x"`
-4. Installed IntelliJ IDEA Community Edition (free)
-5. Created first project → wrote Hello World → ran successfully ✅
+### 🛠️ SETUP — ✅ Completed
+| Task | Status |
+|------|--------|
+| JDK 17+ installed | ✅ |
+| IDE setup (IntelliJ / VS Code) | ✅ |
+| `java -version` verified | ✅ |
+| First program compiled and run | ✅ |
 
 ---
 
@@ -721,36 +491,696 @@ Total: ₹705 | Change: ₹295
 ╠══════════════════════════════════════════════════════════════════╣
 ║  Date        :  March 30, 2025                                  ║
 ║  Phase       :  Phase 1 — Java Fundamentals                     ║
-║  Hours Spent :  5 Hours                                         ║
-║  Status      :  ✅ COMPLETED                                     ║
+║  Hours Spent :  5 Hours    |   Status : ✅ COMPLETED             ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  CONCEPTS COVERED                                               ║
-║  ✅  How Java works — JDK → Bytecode → JVM → Output             ║
-║  ✅  Basic program structure and every keyword explained         ║
-║  ✅  8 Primitive Data Types + String (non-primitive)             ║
-║  ✅  Variables — declaration and initialization                  ║
-║  ✅  Widening (auto) vs Narrowing (manual) Type Casting          ║
-║  ✅  Arithmetic Operators  ( +  -  *  /  % )                    ║
-║  ✅  Relational Operators  ( ==  !=  >  <  >=  <= )             ║
-║  ✅  Logical Operators     ( &&  ||  ! )                        ║
-║  ✅  Increment / Decrement ( ++  -- ) pre and post              ║
-║  ✅  Assignment Operators  ( +=  -=  *=  /=  %= )              ║
+║  ✅ How Java works — JDK → Bytecode → JVM → Output              ║
+║  ✅ 8 Primitive Data Types + String (non-primitive)              ║
+║  ✅ Variables — declaration and initialization                   ║
+║  ✅ Widening vs Narrowing Type Casting                           ║
+║  ✅ Arithmetic, Relational, Logical, Increment, Assignment Ops   ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  PRACTICE SET       :  6 / 6 Solved  ✅                         ║
-║  MINI CHALLENGE     :  ✅ Completed  (Shopkeeper Problem)        ║
-║  REVISION TASKS     :  ✅ Completed  (All 4 tasks)               ║
-║  REFLECTION         :  ✅ All 5 questions answered               ║
-║  SETUP              :  ✅ JDK + IDE + First program running      ║
+║  Problems Solved : 6/6 ✅  |  Mini Challenge : ✅                ║
+║  Revision Tasks  : 4/4 ✅  |  Reflection     : 5/5 ✅            ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  CONFIDENCE LEVEL   :  ████████░░  80%                          ║
-║  STRONG AREA        :  Operators, Type Casting logic             ║
-║  WEAK AREA          :  Post vs Pre increment in complex exprs   ║
+║  CONFIDENCE     :  ████████░░  80%                              ║
+║  STRONG AREA    :  Operators, type casting logic                 ║
+║  WEAK AREA      :  Post vs Pre increment in complex expressions  ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║  KEY TAKEAWAYS                                                  ║
-║  ▸  Integer division silently drops decimals — very tricky bug  ║
+║  ▸  Integer division silently drops decimals — a sneaky bug     ║
 ║  ▸  Always cast BEFORE dividing, not after                      ║
-║  ▸  = (assign) vs == (compare) — never confuse these            ║
-║  ▸  % (modulo) is one of the most used operators in DSA         ║
+║  ▸  = (assign) vs == (compare) — never confuse                  ║
+║  ▸  % (modulo) is one of the most used ops in DSA               ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+---
+
+## ✅ DAY 2 | March 31, 2025
+
+<div align="center">
+
+![Day](https://img.shields.io/badge/Day-02_of_160-blueviolet?style=for-the-badge)
+![Phase](https://img.shields.io/badge/Phase-1_Java_Fundamentals-green?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Conditionals_%26_Decision_Making-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed_✅-brightgreen?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems_Solved-6-orange?style=for-the-badge)
+![Hours](https://img.shields.io/badge/Hours_Spent-5-blue?style=for-the-badge)
+
+</div>
+
+---
+
+### 🎯 Day 2 Goal
+> Master all forms of conditional statements in Java — `if`, `if-else`, `if-else-if` ladder, nested `if`, `switch-case`, and the ternary operator. Convert any real-world decision into code logic.
+
+---
+
+### ⏰ Time Breakdown
+
+| Time Block | Activity | Duration |
+|------------|----------|----------|
+| Block 1 | Concepts — if, if-else, if-else-if ladder | 60 min |
+| Block 2 | Concepts — Nested if, switch-case, ternary | 45 min |
+| Block 3 | Quick revision of Day 1 operators | 15 min |
+| Block 4 | Practice Set — 6 Problems | 120 min |
+| Block 5 | Mini Challenge + Revision Tasks | 40 min |
+| Block 6 | Reflection Questions | 20 min |
+
+---
+
+### 📘 CONCEPTS LEARNED
+
+---
+
+#### 🔷 1. The `if` Statement
+
+Executes a block **only if** the condition is `true`. If false, it is completely skipped.
+
+```java
+// Syntax
+if (condition) {
+    // runs ONLY if condition is true
+}
+
+// Example
+int age = 20;
+if (age >= 18) {
+    System.out.println("You are an adult.");
+}
+// Output: You are an adult.
+// If age = 15 → nothing prints
+```
+
+> 💡 **Key Rule:** The condition inside `if()` must evaluate to a **boolean** — either `true` or `false`.
+
+---
+
+#### 🔷 2. The `if-else` Statement
+
+Two paths — one for `true`, one for `false`. **Exactly one** block always runs.
+
+```java
+// Syntax
+if (condition) {
+    // runs if TRUE
+} else {
+    // runs if FALSE
+}
+
+// Example
+int marks = 45;
+if (marks >= 50) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}
+// Output: Fail
+```
+
+> 💡 **Both blocks can NEVER run** for the same input — they are mutually exclusive.
+
+---
+
+#### 🔷 3. The `if-else-if` Ladder
+
+For **more than 2 outcomes**. Java checks top to bottom — the **first true condition** wins and the rest are skipped.
+
+```java
+int marks = 72;
+
+if (marks >= 90) {
+    System.out.println("Grade: A");
+} else if (marks >= 75) {
+    System.out.println("Grade: B");
+} else if (marks >= 60) {
+    System.out.println("Grade: C");   // ← This runs for marks=72
+} else if (marks >= 40) {
+    System.out.println("Grade: D");
+} else {
+    System.out.println("Grade: F");
+}
+// Output: Grade: C
+```
+
+> ⚠️ **Critical Rule — Order Matters!** Java stops at the **FIRST true** condition. If you put `marks >= 40` before `marks >= 60`, everyone above 40 would get Grade D — a logic bug.
+
+---
+
+#### 🔷 4. Nested `if` Statements
+
+An `if` inside another `if`. Used when one decision depends on the outcome of a prior decision.
+
+```java
+int age = 20;
+boolean hasID = true;
+
+if (age >= 18) {              // Outer condition
+    if (hasID) {              // Inner condition — only checked if outer is true
+        System.out.println("Entry allowed.");
+    } else {
+        System.out.println("Bring your ID.");
+    }
+} else {
+    System.out.println("You are underage.");
+}
+// Output: Entry allowed.
+// If age=20, hasID=false → "Bring your ID."
+// If age=16             → "You are underage." (inner if never checked)
+```
+
+> ⚠️ **Best Practice:** Avoid nesting deeper than 2–3 levels. Deep nesting = hard to read and debug.
+
+---
+
+#### 🔷 5. The `switch-case` Statement
+
+Best for when **one variable** has many **specific discrete values**, each with different behavior.
+
+```java
+// Syntax
+switch (variable) {
+    case value1:
+        // code
+        break;        // ← MUST have break to stop fall-through
+    case value2:
+        // code
+        break;
+    default:
+        // runs if no case matches
+}
+
+// Example
+int day = 3;
+switch (day) {
+    case 1: System.out.println("Monday");    break;
+    case 2: System.out.println("Tuesday");   break;
+    case 3: System.out.println("Wednesday"); break;  // ← runs
+    case 4: System.out.println("Thursday");  break;
+    case 5: System.out.println("Friday");    break;
+    default: System.out.println("Weekend");
+}
+// Output: Wednesday
+```
+
+**Fall-Through — What happens without `break`:**
+```java
+int x = 2;
+switch (x) {
+    case 1: System.out.println("One");
+    case 2: System.out.println("Two");     // ← runs
+    case 3: System.out.println("Three");   // ← also runs! (fall-through)
+    default: System.out.println("Default");// ← also runs!
+}
+// Output: Two  Three  Default
+```
+
+> ⚠️ **Always add `break`** unless intentional fall-through is needed.
+
+**Valid switch types:** `int`, `byte`, `short`, `char`, `String` (Java 7+), `enum`
+**Invalid:** `boolean`, `float`, `double`
+
+**Useful intentional fall-through:**
+```java
+// Group multiple cases with same action
+switch (day) {
+    case 1: case 2: case 3: case 4: case 5:
+        System.out.println("Weekday"); break;
+    case 6: case 7:
+        System.out.println("Weekend"); break;
+}
+```
+
+---
+
+#### 🔷 6. Ternary Operator
+
+One-line compact `if-else` that **returns a value**.
+
+```java
+// Syntax
+variable = (condition) ? valueIfTrue : valueIfFalse;
+
+// Examples
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println("Max = " + max);   // Max = 20
+
+int marks = 55;
+String result = (marks >= 50) ? "Pass" : "Fail";
+System.out.println(result);           // Pass
+
+int x = -7;
+int sign = (x > 0) ? 1 : -1;         // sign = -1
+```
+
+> ✅ **Use ternary** for simple single-value decisions — keeps code clean.
+> ❌ **Avoid chaining ternary inside ternary** — becomes unreadable.
+
+---
+
+#### 🔷 7. Comparing Strings — Critical Rule
+
+```java
+// ❌ WRONG — compares memory addresses, not values
+String s1 = "hello";
+String s2 = new String("hello");
+System.out.println(s1 == s2);          // false (different objects!)
+
+// ✅ CORRECT — always use .equals() for Strings
+System.out.println(s1.equals(s2));     // true
+
+// Case-insensitive comparison
+System.out.println(s1.equalsIgnoreCase("HELLO")); // true
+```
+
+> ⚠️ **Interview Trap:** Using `==` on Strings compares **memory addresses**, not content. `"hello" == "hello"` might be `true` only by coincidence (String pool). **Always use `.equals()`.**
+
+---
+
+#### 🔷 8. if-else-if vs switch — When to Use What
+
+| Situation | Use |
+|-----------|-----|
+| Range-based conditions (marks > 90) | `if-else-if` |
+| Checking one variable against exact values | `switch-case` |
+| Complex boolean conditions (`&&`, `\|\|`) | `if-else-if` |
+| Simple, clean multi-case on int/char/String | `switch-case` |
+| More than ~5 exact discrete values | `switch-case` (cleaner) |
+
+---
+
+### 🧠 PRACTICE SET — 6 / 6 Solved ✅
+
+---
+
+#### ✅ Problem 1 — Positive, Negative, or Zero `[Easy]`
+
+**Task:** Given `n`, print whether it's Positive, Negative, or Zero.
+
+```java
+public class P1_PositiveNegativeZero {
+    public static void main(String[] args) {
+        int n = -3;
+
+        if (n > 0) {
+            System.out.println(n + " is Positive");
+        } else if (n < 0) {
+            System.out.println(n + " is Negative");
+        } else {
+            System.out.println("It is Zero");
+        }
+    }
+}
+```
+
+```
+Test n=7  → 7 is Positive
+Test n=-3 → -3 is Negative
+Test n=0  → It is Zero
+```
+
+> 🔑 **Key Learning:** Three mutually exclusive conditions need `if-else-if`. Zero is a special case — it's neither positive nor negative. The `else` at the end covers exactly one remaining case: zero.
+
+---
+
+#### ✅ Problem 2 — Largest of Three Numbers `[Easy-Medium]`
+
+**Task:** Find the largest among `a = 12, b = 45, c = 23`.
+
+```java
+public class P2_LargestOfThree {
+    public static void main(String[] args) {
+        int a = 12, b = 45, c = 23;
+        int largest;
+
+        if (a >= b && a >= c) {
+            largest = a;
+        } else if (b >= a && b >= c) {
+            largest = b;
+        } else {
+            largest = c;
+        }
+
+        System.out.println("Largest = " + largest);
+    }
+}
+```
+
+```
+Output: Largest = 45
+```
+
+**Equal values test:** `a=5, b=5, c=3` → Largest = 5 ✅ (handled by `>=`)
+
+> 🔑 **Key Learning:** Use `>=` not `>` to handle equal values correctly. The `else` at the end implicitly handles `c` because if neither `a` nor `b` is largest, `c` must be.
+
+---
+
+#### ✅ Problem 3 — Grade Calculator `[Easy-Medium]`
+
+**Task:** Given marks, print grade. Handle invalid input first.
+
+```java
+public class P3_GradeCalculator {
+    public static void main(String[] args) {
+        int marks = 88;
+
+        if (marks < 0 || marks > 100) {
+            System.out.println("Invalid marks! Enter between 0 and 100.");
+        } else if (marks >= 90) {
+            System.out.println("Grade: A+ — Outstanding");
+        } else if (marks >= 75) {
+            System.out.println("Grade: A  — Excellent");
+        } else if (marks >= 60) {
+            System.out.println("Grade: B  — Good");
+        } else if (marks >= 45) {
+            System.out.println("Grade: C  — Average");
+        } else if (marks >= 33) {
+            System.out.println("Grade: D  — Below Average");
+        } else {
+            System.out.println("Grade: F  — Fail");
+        }
+    }
+}
+```
+
+```
+marks=88  → Grade: A  — Excellent
+marks=32  → Grade: F  — Fail
+marks=105 → Invalid marks! Enter between 0 and 100.
+```
+
+> 🔑 **Key Learning:** **Always validate input first** — put the invalid check at the top before any other conditions. This is a real-world software principle called "fail fast". Notice we go from highest to lowest grade — reversing this order would break the logic completely.
+
+---
+
+#### ✅ Problem 4 — Calculator with switch `[Medium]`
+
+**Task:** Perform arithmetic on `a = 20, b = 4` based on `char` operator. Handle division by zero.
+
+```java
+public class P4_SimpleCalculatorSwitch {
+    public static void main(String[] args) {
+        int a = 20, b = 4;
+        char op = '/';
+        double result;
+
+        switch (op) {
+            case '+':
+                result = a + b;
+                System.out.println(a + " + " + b + " = " + result);
+                break;
+            case '-':
+                result = a - b;
+                System.out.println(a + " - " + b + " = " + result);
+                break;
+            case '*':
+                result = a * b;
+                System.out.println(a + " * " + b + " = " + result);
+                break;
+            case '/':
+                if (b == 0) {
+                    System.out.println("Error: Division by zero!");
+                } else {
+                    result = (double) a / b;
+                    System.out.println(a + " / " + b + " = " + result);
+                }
+                break;
+            case '%':
+                if (b == 0) {
+                    System.out.println("Error: Modulo by zero!");
+                } else {
+                    result = a % b;
+                    System.out.println(a + " % " + b + " = " + result);
+                }
+                break;
+            default:
+                System.out.println("Invalid operator: " + op);
+        }
+    }
+}
+```
+
+```
+op='/'  → 20 / 4 = 5.0
+op='+'  → 20 + 4 = 24.0
+op='*'  → 20 * 4 = 80.0
+b=0,op='/' → Error: Division by zero!
+```
+
+> 🔑 **Key Learning:** `switch` works perfectly with `char`. Division by zero doesn't crash Java for integers (actually throws ArithmeticException) — checking `b==0` before dividing is the safe approach. Nested `if` inside a `case` is completely valid.
+
+---
+
+#### ✅ Problem 5 — Leap Year Checker `[Medium]`
+
+**Task:** Determine if a year is a leap year using the 3-rule system.
+
+```java
+public class P5_LeapYear {
+    public static void main(String[] args) {
+        int year = 2024;
+        boolean isLeap;
+
+        // Method 1: Step-by-step (readable)
+        if (year % 400 == 0) {
+            isLeap = true;             // Divisible by 400 → always leap
+        } else if (year % 100 == 0) {
+            isLeap = false;            // Divisible by 100 but not 400 → NOT leap
+        } else if (year % 4 == 0) {
+            isLeap = true;             // Divisible by 4 but not 100 → leap
+        } else {
+            isLeap = false;            // None of above → not leap
+        }
+
+        System.out.println(year + " → " + (isLeap ? "Leap Year ✅" : "Not a Leap Year ❌"));
+
+        // Method 2: One-line using logical operators
+        boolean isLeapOneLiner = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        System.out.println("One-liner result: " + isLeapOneLiner);
+    }
+}
+```
+
+```
+2024 → Leap Year ✅       (div by 4, not by 100)
+2000 → Leap Year ✅       (div by 400)
+1900 → Not a Leap Year ❌ (div by 100, not by 400)
+2023 → Not a Leap Year ❌ (not div by 4)
+```
+
+**Logic Explanation:**
+```
+Is year % 400 == 0?  → YES → Leap Year (e.g. 2000)
+         ↓ NO
+Is year % 100 == 0?  → YES → NOT Leap Year (e.g. 1900)
+         ↓ NO
+Is year % 4   == 0?  → YES → Leap Year (e.g. 2024)
+         ↓ NO
+                              NOT Leap Year (e.g. 2023)
+```
+
+> 🔑 **Key Learning:** **Order of checking conditions is critical.** The 400 rule must come before the 100 rule — otherwise 2000 would be wrongly classified as not a leap year. This is a classic interview question. The one-liner version uses `&&` and `||` to compress the same logic beautifully.
+
+---
+
+#### ✅ Problem 6 — Triangle Validity + Classifier `[Medium-Hard]`
+
+**Task:** Check triangle validity, then classify (Equilateral / Isosceles / Scalene / Right-Angled).
+
+```java
+public class P6_TriangleClassifier {
+    public static void main(String[] args) {
+        int a = 3, b = 4, c = 5;
+
+        // Step 1: Validate triangle
+        if (a + b <= c || a + c <= b || b + c <= a) {
+            System.out.println("Invalid Triangle ❌ (sides: " + a + ", " + b + ", " + c + ")");
+            return;
+        }
+
+        System.out.println("Valid Triangle ✅ — Sides: " + a + ", " + b + ", " + c);
+
+        // Step 2: Find largest side for right-angle check
+        int max = Math.max(a, Math.max(b, c));
+        int s1, s2;
+        if (max == a) { s1 = b; s2 = c; }
+        else if (max == b) { s1 = a; s2 = c; }
+        else { s1 = a; s2 = b; }
+
+        // Step 3: Check right-angled
+        if (s1 * s1 + s2 * s2 == max * max) {
+            System.out.println("Type: Right-Angled Triangle 📐");
+        }
+
+        // Step 4: Classify by sides
+        if (a == b && b == c) {
+            System.out.println("Classification: Equilateral 🔺");
+        } else if (a == b || b == c || a == c) {
+            System.out.println("Classification: Isosceles");
+        } else {
+            System.out.println("Classification: Scalene");
+        }
+    }
+}
+```
+
+```
+a=3,b=3,c=3  → Valid ✅ | Equilateral 🔺
+a=5,b=5,c=8  → Valid ✅ | Isosceles
+a=3,b=4,c=5  → Valid ✅ | Right-Angled 📐 | Scalene
+a=1,b=2,c=10 → Invalid Triangle ❌
+```
+
+> 🔑 **Key Learning:** This problem requires **breaking a complex problem into clear logical steps**. Step 1: Validate. Step 2: Setup. Step 3: Special classification. Step 4: General classification. A triangle CAN be both Scalene and Right-Angled (like 3-4-5). Using `return` after printing "Invalid" is an elegant early exit strategy.
+
+---
+
+### ⚡ MINI CHALLENGE — ✅ Solved
+
+**Problem:** Traffic Light System using switch-case.
+
+```java
+public class MiniChallenge_Day2 {
+    public static void main(String[] args) {
+        String color = "red";
+
+        // Make case-insensitive by converting to uppercase first
+        switch (color.toUpperCase()) {
+            case "RED":
+                System.out.println("🔴 STOP — Do not cross");
+                break;
+            case "YELLOW":
+                System.out.println("🟡 SLOW DOWN — Prepare to stop");
+                break;
+            case "GREEN":
+                System.out.println("🟢 GO — Safe to cross");
+                break;
+            default:
+                System.out.println("⚠️  INVALID SIGNAL — Check the light");
+        }
+    }
+}
+```
+
+```
+"RED"    → 🔴 STOP — Do not cross
+"yellow" → 🟡 SLOW DOWN — Prepare to stop  (case-insensitive works!)
+"Green"  → 🟢 GO — Safe to cross
+"blue"   → ⚠️  INVALID SIGNAL — Check the light
+```
+
+> 🔑 **Key Learning:** `.toUpperCase()` before `switch` makes any String comparison case-insensitive — a clean, professional pattern used in real applications. `switch` on String requires `.toUpperCase()` or `.toLowerCase()` for case-insensitive matching.
+
+---
+
+### 🔁 REVISION TASKS — ✅ All Completed
+
+| Task | Outcome |
+|------|---------|
+| Wrote all 8 primitive types + sizes from memory | ✅ All correct |
+| Wrote both casting approaches for `double x = 7.0 / 2` | ✅ `(int)(x/2)` vs `x/2` |
+| Predicted `5 + 3 + "Java"` vs `"Java" + 5 + 3` outputs | ✅ See note below |
+
+**Revision Discovery — String + int order matters:**
+```java
+System.out.println(5 + 3 + "Java");   // → "8Java"
+// Because: 5+3=8 first (both ints), then "8"+"Java" = "8Java"
+
+System.out.println("Java" + 5 + 3);   // → "Java53"
+// Because: "Java"+5="Java5" first (string concat), then "Java5"+3="Java53"
+```
+
+> 🔑 **Key Insight:** `+` is evaluated **left to right**. Once it encounters a String, all subsequent `+` operations become string concatenation, not arithmetic. This is a very common interview trap!
+
+---
+
+### ❓ REFLECTION QUESTIONS — ✅ All Answered
+
+<details>
+<summary><b>Q1. if-else-if ladder vs switch-case — when to use which?</b></summary>
+
+> **Use `if-else-if`** when: conditions involve ranges (`marks >= 90`), complex boolean expressions with `&&`/`||`, or comparing different variables.
+> **Use `switch-case`** when: checking ONE variable against multiple exact, discrete values (`day == 3`, `color == "RED"`). Switch is cleaner and more readable for this.
+> Rule of thumb: if you're writing `== someValue` repeatedly for the same variable → use `switch`.
+
+</details>
+
+<details>
+<summary><b>Q2. What is fall-through in switch-case?</b></summary>
+
+> When a `case` executes and there is no `break`, execution **falls through** to the next `case` automatically, running it regardless of whether that case's value matches.
+> **Bug version:** forgetting `break` causes unintended cases to run.
+> **Useful version:** intentional grouping — `case 1: case 2: case 3:` followed by one block and one `break` — all three cases share the same action. E.g., weekday grouping.
+
+</details>
+
+<details>
+<summary><b>Q3. Why not use == for Strings?</b></summary>
+
+> `==` compares **memory addresses** (references), not the actual content. Two String objects with identical text can be stored at different memory locations, making `==` return `false` even when values are the same.
+> Always use `.equals()` for content comparison, `.equalsIgnoreCase()` for case-insensitive comparison.
+> This is one of the most common Java interview questions.
+
+</details>
+
+<details>
+<summary><b>Q4. What is the ternary operator?</b></summary>
+
+> A compact one-line `if-else` that returns a value: `condition ? valueIfTrue : valueIfFalse`
+> Rewrite: `if (x > 0) { sign = 1; } else { sign = -1; }`
+> As ternary: `int sign = (x > 0) ? 1 : -1;`
+> Use for simple value assignments. Avoid nesting ternaries inside each other.
+
+</details>
+
+<details>
+<summary><b>Q5. If two conditions are both true in an if-else-if ladder — which runs?</b></summary>
+
+> The **FIRST** matching condition runs, and ALL remaining conditions are skipped — regardless of whether they would also be true. This is why condition ordering matters critically. Example: if `marks = 95` and you check `marks >= 40` before `marks >= 90`, it would print Grade D and never reach Grade A.
+
+</details>
+
+---
+
+### 📌 DAY 2 SUMMARY CARD
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                     📅  DAY 2 — SUMMARY                        ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Date        :  March 31, 2025                                  ║
+║  Phase       :  Phase 1 — Java Fundamentals                     ║
+║  Topic       :  Conditionals & Decision Making                  ║
+║  Hours Spent :  5 Hours    |   Status : ✅ COMPLETED             ║
+╠══════════════════════════════════════════════════════════════════╣
+║  CONCEPTS COVERED                                               ║
+║  ✅  if statement — single-path decision                         ║
+║  ✅  if-else — two-path mutually exclusive decision              ║
+║  ✅  if-else-if ladder — multi-path, first-match wins            ║
+║  ✅  Nested if — decisions within decisions                      ║
+║  ✅  switch-case — discrete value matching + fall-through        ║
+║  ✅  Ternary operator — compact one-line if-else                 ║
+║  ✅  String comparison — .equals() vs == (critical!)             ║
+║  ✅  if-else-if vs switch — when to use which                    ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Problems Solved : 6/6 ✅  |  Mini Challenge : ✅                ║
+║  Revision Tasks  : 3/3 ✅  |  Reflection     : 5/5 ✅            ║
+╠══════════════════════════════════════════════════════════════════╣
+║  CONFIDENCE     :  █████████░  90%                              ║
+║  STRONG AREA    :  if-else-if logic, leap year reasoning         ║
+║  WEAK AREA      :  Knowing exactly when switch beats if-else-if  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  KEY TAKEAWAYS                                                  ║
+║  ▸  Condition ORDER in if-else-if is everything                 ║
+║  ▸  Always validate input FIRST — fail fast principle           ║
+║  ▸  NEVER use == for String comparison — use .equals()          ║
+║  ▸  switch + .toUpperCase() = easy case-insensitive matching     ║
+║  ▸  5+3+"Java"="8Java" but "Java"+5+3="Java53" — left to right  ║
+║  ▸  Ternary: simple decisions only — no chaining                ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -801,12 +1231,13 @@ Total: ₹705 | Change: ₹295
 <summary><b>Week 1 (Day 1–7) — In Progress 🔄</b></summary>
 
 ```
-Topics Covered   : Variables, Data Types, Type Casting, Operators (Day 1) ✅
-Problems Solved  : 6
-Strong Areas     : Arithmetic operators, type casting logic, modulo use cases
-Weak Areas       : Pre vs Post increment in complex expressions
-Key Takeaway     : Integer division is the most common silent bug for beginners
-Goal for Week 2  : Master conditionals, loops, and write pattern programs
+Topics Covered   : Variables, Data Types, Casting, Operators (Day 1) ✅
+                   Conditionals — if, switch, ternary (Day 2) ✅
+Problems Solved  : 12 total (6 per day)
+Strong Areas     : Operator logic, conditional ordering, String comparison trap
+Weak Areas       : Pre/post increment edge cases, switch vs if-else judgment
+Key Takeaway     : Condition ORDER is everything in if-else-if ladders
+Goal for Week 2  : Master all loop types + pattern programs
 ```
 
 </details>
@@ -829,12 +1260,13 @@ Goal for Week 3  : [To be filled]
 
 ## ❌ Mistakes & Learnings Log
 
-> One of the most powerful habits — documenting every mistake so I never repeat it.
-
 | # | Date | Topic | Mistake Made | Root Cause | Fix / Learning |
 |---|------|-------|-------------|------------|----------------|
-| 1 | Mar 30 | Type Casting | `double r = a/b` gave `3.0` not `3.5` | Division executed as int before storing in double | Cast operand BEFORE dividing: `(double)a / b` |
-| 2 | Mar 30 | Formula | `9/5` inside formula gave `1` | Both are int literals → integer division | Use `9.0/5` or ensure one operand is `double` |
+| 1 | Mar 30 | Type Casting | `double r = a/b` gave `3.0` not `3.5` | Division done as int before storing | Cast BEFORE dividing: `(double)a / b` |
+| 2 | Mar 30 | Formula | `9/5` in formula gave `1` | Both int literals → integer division | Use `9.0/5` or `double` variable |
+| 3 | Mar 31 | String Compare | Used `==` to compare two Strings | `==` compares references, not values | Always use `.equals()` for Strings |
+| 4 | Mar 31 | Ladder Order | Leap year — checked `% 4` before `% 400` | Wrong condition order | `% 400` must come BEFORE `% 100` BEFORE `% 4` |
+| 5 | Mar 31 | String + int | `"Java" + 5 + 3` gave `"Java53"` not `"Java8"` | `+` is left-to-right; String concat takes over | Arithmetic before string: `"Java" + (5 + 3)` |
 
 ---
 
@@ -854,10 +1286,10 @@ Goal for Week 3  : [To be filled]
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 3 | 3 | 0 | 6 |
+| Custom Daily Problems | 5 | 6 | 1 | 12 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **3** | **3** | **0** | **6** |
+| **Total** | **5** | **6** | **1** | **12** |
 
 ---
 
@@ -867,7 +1299,6 @@ Goal for Week 3  : [To be filled]
 <summary><b>Data Types Cheatsheet</b></summary>
 
 ```java
-// Primitive Types
 byte    b = 100;          // 1 byte  | -128 to 127
 short   s = 1000;         // 2 bytes | -32768 to 32767
 int     i = 50000;        // 4 bytes | ~-2.1B to 2.1B
@@ -876,34 +1307,40 @@ float   f = 3.14f;        // 4 bytes | 6-7 decimal digits
 double  d = 3.14159265;   // 8 bytes | 15 decimal digits
 char    c = 'A';          // 2 bytes | Single character
 boolean flag = true;      // 1 bit   | true or false
-
-// Non-Primitive
-String name = "Java";     // Object, not primitive — default null
+String name = "Java";     // Object  | default null
 ```
 
 </details>
 
 <details>
-<summary><b>Operators Cheatsheet</b></summary>
+<summary><b>Conditionals Cheatsheet</b></summary>
 
 ```java
-// Arithmetic
-+ - * / %
+// if
+if (condition) { }
 
-// Relational
-== != > < >= <=
+// if-else
+if (condition) { } else { }
 
-// Logical
-&& (AND)  || (OR)  ! (NOT)
+// if-else-if ladder
+if (c1) { } else if (c2) { } else if (c3) { } else { }
 
-// Bitwise
-& | ^ ~ << >>
+// Nested if
+if (outer) { if (inner) { } else { } }
 
-// Assignment
-= += -= *= /= %=
+// switch-case
+switch (var) {
+    case v1: /* code */ break;
+    case v2: /* code */ break;
+    default: /* code */
+}
 
 // Ternary
-condition ? valueIfTrue : valueIfFalse;
+type var = (condition) ? trueVal : falseVal;
+
+// String comparison — ALWAYS use .equals()
+s1.equals(s2)
+s1.equalsIgnoreCase(s2)
 ```
 
 </details>
@@ -912,38 +1349,28 @@ condition ? valueIfTrue : valueIfFalse;
 <summary><b>Type Casting Rules</b></summary>
 
 ```java
-// Widening — Automatic (no data loss)
-// byte → short → int → long → float → double
-int x = 100;
-double d = x;       // OK: 100.0
+// Widening (auto): byte→short→int→long→float→double
+int x = 100;  double d = x;         // 100.0
 
-// Narrowing — Manual (may lose data)
-double d = 9.99;
-int x = (int) d;    // x = 9 (truncated, NOT rounded!)
+// Narrowing (manual, may lose data)
+double d = 9.99;  int x = (int) d;  // 9 (truncated!)
 
 // Fix integer division
-int a = 7, b = 2;
-double r  = (double) a / b;  // 3.5 ✅ cast BEFORE dividing
-double r2 = a / b;           // 3.0 ❌ too late, int division already done
+double r = (double) a / b;   // cast BEFORE dividing ✅
 ```
 
 </details>
 
 <details>
-<summary><b>Loop Structures</b></summary>
+<summary><b>Operators Cheatsheet</b></summary>
 
 ```java
-// For Loop
-for (int i = 0; i < n; i++) { }
-
-// While Loop
-while (condition) { }
-
-// Do-While Loop
-do { } while (condition);
-
-// Enhanced For (arrays/collections)
-for (int x : array) { }
+// Arithmetic : + - * / %
+// Relational : == != > < >= <=
+// Logical    : && || !
+// Increment  : x++ (post)  ++x (pre)
+// Assignment : += -= *= /= %=
+// Ternary    : condition ? trueVal : falseVal
 ```
 
 </details>
@@ -952,13 +1379,8 @@ for (int x : array) { }
 <summary><b>Big-O Complexity Reference</b></summary>
 
 ```
-O(1)       → Constant    — Best
-O(log n)   → Logarithmic
-O(n)       → Linear
-O(n log n) → Linearithmic
-O(n²)      → Quadratic
-O(2ⁿ)      → Exponential
-O(n!)      → Factorial   — Worst
+O(1) → O(log n) → O(n) → O(n log n) → O(n²) → O(2ⁿ) → O(n!)
+Best                                                        Worst
 ```
 
 | Algorithm | Best | Average | Worst |
@@ -987,10 +1409,23 @@ O(n!)      → Factorial   — Worst
 
 ---
 
+## 🔗 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/your-profile)
+
+</div>
+
+---
+
+<div align="center">
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 1 of 160 — Done ✅**
+**Day 2 of 160 — Done ✅ &nbsp;|&nbsp; 12 Problems Solved &nbsp;|&nbsp; Streak: 2 Days 🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
