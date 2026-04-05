@@ -223,10 +223,10 @@ x %= 4;   // x = 2
 **Task:** Store name and age in variables and print a formatted sentence.
 
 ```java
-public class P1_HelloProgrammer {
+public class P1_Deatails {
     public static void main(String[] args) {
-        String name = "Rahul";
-        int age = 20;
+        String name = "Abhishek Ranjan";
+        int age = 24;
         System.out.println("My name is " + name + " and I am " + age + " years old.");
     }
 }
@@ -234,7 +234,7 @@ public class P1_HelloProgrammer {
 
 ```
 Output:
-My name is Rahul and I am 20 years old.
+My name is Abhishek Ranjan and I am 24 years old.
 ```
 
 > 🔑 `+` concatenates String with int — Java auto-converts `int` to String when joining with `+`.
@@ -500,7 +500,7 @@ Total: ₹705 | Change: ₹295
 ║  Problems   : 6/6 ✅  |  Mini Challenge : ✅  |  Revision : ✅   ║
 ║  Reflection : 5/5 ✅  |  Setup          : ✅                     ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  CONFIDENCE     :  ████████░░  80%                              ║
+║  CONFIDENCE     :  █████████░  90%                              ║
 ║  STRONG AREA    :  Operators, type casting logic                 ║
 ║  WEAK AREA      :  Post vs Pre increment in complex expressions  ║
 ╠══════════════════════════════════════════════════════════════════╣
