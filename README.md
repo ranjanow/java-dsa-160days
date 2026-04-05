@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-6_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-5_Days_🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-7_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-6_Days_🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -60,7 +60,7 @@ Phase 5 ──────── Interview Prep           [Day 141–160]  ⏳ U
 <br/>
 
 | Days | Topic | Status |
-|------|--------------------------------------------------------------|--------|
+|------|-------|--------|
 | Day 01–02 | Variables, Data Types, Casting, Operators, Conditionals | ✅ Completed |
 | Day 03–05 | Loops — for, while, do-while + Patterns | 🔄 In Progress |
 | Day 06–08 | Functions / Methods, Scope, Recursion Intro | ⬜ |
@@ -146,6 +146,7 @@ java-dsa-journey/
 │   ├── Day03_Loops.md                         ← ✅ Complete
 │   ├── Day04_Loops_Patterns.md                ← ✅ Complete
 │   ├── Day05_Functions.md                     ← ✅ Complete
+│   ├── Day06_Arrays.md                        ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -170,17 +171,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 5
-Remaining   : 155
+Completed   : 6
+Remaining   : 154
 
-[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3.125%
+[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3.75%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `█████░░░░░` 24% | 5 | 21 |
+| Phase 1 — Java Fundamentals | `██████░░░░` 29% | 6 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -199,8 +200,8 @@ Remaining   : 155
 | [03](./Phase-1_Java-Fundamentals/Day03_Loops.md) | Apr 01, 2025 | Loops — for, while, do-while, break, continue | 6 | ✅ Completed |
 | [04](./Phase-1_Java-Fundamentals/Day04_Loops_Patterns.md) | Apr 02, 2025 | Loop Patterns — triangles, pyramid, Floyd's, hollow | 6 | ✅ Completed |
 | [05](./Phase-1_Java-Fundamentals/Day05_Functions.md) | Apr 03, 2025 | Functions & Methods — params, return, overloading, scope | 6 | ✅ Completed |
-| 06 | — | Arrays — 1D, traversal, manipulation | — | ⏳ Upcoming |
-| 05 | — | Loop Revision + Mixed Problems | — | ⏳ Upcoming |
+| [06](./Phase-1_Java-Fundamentals/Day06_Arrays.md) | Apr 04, 2025 | Arrays — declaration, traversal, search, rotate, duplicates | 6 | ✅ Completed |
+| 07 | — | 2D Arrays — matrix traversal, operations | — | ⏳ Upcoming || 05 | — | Loop Revision + Mixed Problems | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -210,10 +211,10 @@ Remaining   : 155
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 10 | 15 | 5 | 30 |
+| Custom Daily Problems | 12 | 18 | 6 | 36 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **10** | **15** | **5** | **30** |
+| **Total** | **12** | **18** | **6** | **36** |
 
 ---
 
@@ -229,6 +230,7 @@ Remaining   : 155
 - [x] Loops — for, while, do-while, break, continue, nested loops
 - [x] Loop Patterns — triangles, pyramids, Floyd's, hollow shapes, diamond
 - [x] Functions & Methods — parameters, return types, scope, overloading, pass-by-value
+- [x] Arrays (1D) — declaration, traversal, search, reverse, rotate, duplicate detection
 - [x] Loop control — break, continue
 - [x] Essential patterns — sum, factorial, digit ops, reverse, Fibonacci
 - [ ] Functions & Methods
@@ -272,6 +274,10 @@ Remaining   : 155
 | 11 | Day 5 | Pass-by-value | Expected swap to affect original variables | Primitives are COPIED — method works on copies only |
 | 12 | Day 5 | Factorial | Used `int` — overflowed at 13! | Use `long` for factorials — int max ~2.1B, 13! = 6.2B |
 | 13 | Day 5 | Overloading | Tried to overload by return type only | Overloading requires different parameter signatures, not just return type |
+| 14 | Day 6 | Array bounds | Used `i <= arr.length` — crashed at boundary | Always `i < arr.length` — valid indices are 0 to n-1 |
+| 15 | Day 6 | Max init | Initialized max=0 — wrong for negative arrays | Always initialize with `arr[0]`, not 0 |
+| 16 | Day 6 | Rotate edge | Forgot `k = k % n` — wrong for k >= n | Always apply modulo before rotate — full rotations cancel |
+| 17 | Day 6 | Array copy | Called reverse() on original — lost data | Use `arr.clone()` to create copy, reverse the copy |
 
 ---
 
@@ -317,7 +323,7 @@ Remaining   : 155
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 5 of 160 Complete ✅ &nbsp;|&nbsp; 30 Problems Solved &nbsp;|&nbsp; Streak: 5 Days 🔥🔥🔥🔥🔥**
+**Day 6 of 160 Complete ✅ &nbsp;|&nbsp; 36 Problems Solved &nbsp;|&nbsp; Streak: 6 Days 🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
