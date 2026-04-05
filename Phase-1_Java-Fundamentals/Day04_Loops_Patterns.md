@@ -656,21 +656,21 @@ Output:
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                     📅  DAY 4 — SUMMARY                        ║
+║                     📅  DAY 4 — SUMMARY                         ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║  Date        :  April 02, 2025                                  ║
 ║  Phase       :  Phase 1 — Java Fundamentals                     ║
 ║  Topic       :  Loop Patterns & Nested Loop Mastery             ║
 ║  Hours Spent :  5 Hours        |   Status : ✅ COMPLETED         ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  CONCEPTS COVERED                                               ║
+║  CONCEPTS COVERED                                                ║
 ║  ✅  4-question pattern framework                                ║
 ║  ✅  Row-column formula derivation (build table first!)          ║
 ║  ✅  Spaces — second inner loop for centered shapes              ║
 ║  ✅  Conditional printing — if-else inside nested loops          ║
 ║  ✅  Pattern types reference — 8 types mastered                  ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  PATTERNS SOLVED                                                ║
+║  PATTERNS SOLVED                                                 ║
 ║  ✅  P1 — Right Triangle Star                                    ║
 ║  ✅  P2 — Inverted Right Triangle                                ║
 ║  ✅  P3 — Number Triangle (j and i variants)                     ║
@@ -682,18 +682,18 @@ Output:
 ║  Problems   : 6/6 ✅  |  Mini Challenge : ✅  |  Revision : ✅   ║
 ║  Reflection : 5/5 ✅                                             ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  CONFIDENCE     :  █████████░  90%                              ║
+║  CONFIDENCE     :  █████████░  90%                               ║
 ║  STRONG AREA    :  Triangle patterns, Floyd's, formula derivation║
 ║  WEAK AREA      :  Diamond decomposition — space formulas        ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  KEY TAKEAWAYS                                                  ║
-║  ▸  Build the row-column TABLE first — always, no exceptions    ║
-║  ▸  n - i + 1 = most common decreasing formula in patterns      ║
-║  ▸  2i - 1 = stars in pyramid row i; sum = n² total             ║
-║  ▸  External counter for Floyd's → persists across rows         ║
-║  ▸  Border condition i==1||i==n||j==1||j==n → hollow shapes     ║
+║  KEY TAKEAWAYS                                                   ║
+║  ▸  Build the row-column TABLE first — always, no exceptions     ║
+║  ▸  n - i + 1 = most common decreasing formula in patterns       ║
+║  ▸  2i - 1 = stars in pyramid row i; sum = n² total              ║
+║  ▸  External counter for Floyd's → persists across rows          ║ 
+║  ▸  Border condition i==1||i==n||j==1||j==n → hollow shapes      ║
 ║  ▸  Decompose complex patterns into known sub-patterns           ║
-║  ▸  Conditional in loop → same skill as 2D array boundary DSA   ║
+║  ▸  Conditional in loop → same skill as 2D array boundary DSA    ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 

@@ -60,7 +60,7 @@ Phase 5 ──────── Interview Prep           [Day 141–160]  ⏳ U
 <br/>
 
 | Days | Topic | Status |
-|------|-------|--------|
+|------|--------------------------------------------------------------|--------|
 | Day 01–02 | Variables, Data Types, Casting, Operators, Conditionals | ✅ Completed |
 | Day 03–05 | Loops — for, while, do-while + Patterns | 🔄 In Progress |
 | Day 06–08 | Functions / Methods, Scope, Recursion Intro | ⬜ |

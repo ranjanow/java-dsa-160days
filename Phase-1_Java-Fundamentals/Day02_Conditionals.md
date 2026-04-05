@@ -567,7 +567,6 @@ System.out.println("Java" + 5 + 3);   // → "Java53"
 ║  ▸  Ternary: simple decisions only — never chain them           ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
-
 ---
 
 <div align="center">
