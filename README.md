@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-7_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-6_Days_🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-8_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-7_Days_🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -147,6 +147,7 @@ java-dsa-journey/
 │   ├── Day04_Loops_Patterns.md                ← ✅ Complete
 │   ├── Day05_Functions.md                     ← ✅ Complete
 │   ├── Day06_Arrays.md                        ← ✅ Complete
+│   ├── Day07_Arrays_2D.md                     ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -171,17 +172,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 6
-Remaining   : 154
+Completed   : 7
+Remaining   : 153
 
-[██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3.75%
+[███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 4.375%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████░░░░` 29% | 6 | 21 |
+| Phase 1 — Java Fundamentals | `███████░░░` 33% | 7 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -201,7 +202,8 @@ Remaining   : 154
 | [04](./Phase-1_Java-Fundamentals/Day04_Loops_Patterns.md) | Apr 02, 2025 | Loop Patterns — triangles, pyramid, Floyd's, hollow | 6 | ✅ Completed |
 | [05](./Phase-1_Java-Fundamentals/Day05_Functions.md) | Apr 03, 2025 | Functions & Methods — params, return, overloading, scope | 6 | ✅ Completed |
 | [06](./Phase-1_Java-Fundamentals/Day06_Arrays.md) | Apr 04, 2025 | Arrays — declaration, traversal, search, rotate, duplicates | 6 | ✅ Completed |
-| 07 | — | 2D Arrays — matrix traversal, operations | — | ⏳ Upcoming || 05 | — | Loop Revision + Mixed Problems | — | ⏳ Upcoming |
+| [07](./Phase-1_Java-Fundamentals/Day07_Arrays_2D.md) | Apr 05, 2025 | 2D Arrays — matrix ops, transpose, rotate, spiral, set zeroes | 6 | ✅ Completed |
+| 08 | — | Strings — methods, manipulation, StringBuilder | — | ⏳ Upcoming || 05 | — | Loop Revision + Mixed Problems | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -211,10 +213,10 @@ Remaining   : 154
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 12 | 18 | 6 | 36 |
+| Custom Daily Problems | 14 | 21 | 7 | 42 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **12** | **18** | **6** | **36** |
+| **Total** | **14** | **21** | **7** | **42** |
 
 ---
 
@@ -231,6 +233,7 @@ Remaining   : 154
 - [x] Loop Patterns — triangles, pyramids, Floyd's, hollow shapes, diamond
 - [x] Functions & Methods — parameters, return types, scope, overloading, pass-by-value
 - [x] Arrays (1D) — declaration, traversal, search, reverse, rotate, duplicate detection
+- [x] Arrays (2D) — matrix ops, transpose, rotate 90°, spiral order, set zeroes
 - [x] Loop control — break, continue
 - [x] Essential patterns — sum, factorial, digit ops, reverse, Fibonacci
 - [ ] Functions & Methods
@@ -278,6 +281,9 @@ Remaining   : 154
 | 15 | Day 6 | Max init | Initialized max=0 — wrong for negative arrays | Always initialize with `arr[0]`, not 0 |
 | 16 | Day 6 | Rotate edge | Forgot `k = k % n` — wrong for k >= n | Always apply modulo before rotate — full rotations cancel |
 | 17 | Day 6 | Array copy | Called reverse() on original — lost data | Use `arr.clone()` to create copy, reverse the copy |
+| 18 | Day 7 | Transpose | Started inner loop at j=0 — double swap cancelled out | Inner loop must start at j=i+1 — upper triangle only |
+| 19 | Day 7 | Set Zeroes | Modified matrix while scanning — false zeros spread | Two-pass: record positions first, then zero out |
+| 20 | Day 7 | Spiral | Missing guards for odd dimensions — double printed | Add `if (top<=bottom)` and `if (left<=right)` before last two directions |
 
 ---
 
@@ -323,7 +329,7 @@ Remaining   : 154
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 6 of 160 Complete ✅ &nbsp;|&nbsp; 36 Problems Solved &nbsp;|&nbsp; Streak: 6 Days 🔥🔥🔥🔥🔥🔥**
+**Day 7 of 160 Complete ✅ &nbsp;|&nbsp; 42 Problems Solved &nbsp;|&nbsp; Streak: 7 Days 🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
