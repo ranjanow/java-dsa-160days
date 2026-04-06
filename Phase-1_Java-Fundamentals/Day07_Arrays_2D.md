@@ -1,4 +1,4 @@
-# 📄 Day 07 — 2D Arrays & Matrix Operations
+# 📄 Day 07 — 2D Arrays & Matrix Operations 
 
 <div align="center">
 
@@ -925,7 +925,7 @@ public class MiniChallenge_Day7 {
 ```
 Output:
 ════════════════════════════════════════
-    MATRIX INSPECTOR (4×4)
+    MATRIX INSPECTOR (4×4)  
 ════════════════════════════════════════
 Matrix:
    5   3   8   1
