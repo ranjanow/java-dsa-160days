@@ -34,7 +34,7 @@ This repository documents my complete **160-day journey** of learning Java and D
 | 📅 **Start Date** | March 30, 2025 |
 | 🏁 **Target Date** | September 5, 2025 |
 | ⏱️ **Daily Time** | 5 Hours / Day |
-| 📚 **Resources** | Coding Ninjas + GeeksforGeeks + LeetCode |
+| 📚 **Resources** | Coding Ninjas + GeeksforGeeks + LeetCode + W3Schools |
 
 ---
 
@@ -141,7 +141,7 @@ java-dsa-journey/
 ├── README.md                                  ← 🏠 Master Dashboard (this file)
 │
 ├── Phase-1_Java-Fundamentals/
-│   ├── Day01_Variables_DataTypes.md           ← ✅ Complete
+│   ├── Day01_Variables_DataTypes.md           ← ✅ Complete + W3Schools Enhanced
 │   ├── Day02_Conditionals.md                  ← ✅ Complete
 │   ├── Day03_Loops.md                         ← ✅ Complete
 │   ├── Day04_Loops_Patterns.md                ← ✅ Complete
@@ -197,7 +197,7 @@ Remaining   : 152
 
 | Day | Date | Topic | Problems | Status |
 |-----|------|-------|----------|--------|
-| [01](./Phase-1_Java-Fundamentals/Day01_Variables_DataTypes.md) | Mar 30, 2025 | Variables, Data Types, Type Casting, Operators | 6 | ✅ Completed |
+| [01](./Phase-1_Java-Fundamentals/Day01_Variables_DataTypes.md) | Mar 30, 2025 | Variables, Data Types, Operators + W3Schools 20 Exercise Sets (115 Q) | 6 + 115 | ✅ Completed |
 | [02](./Phase-1_Java-Fundamentals/Day02_Conditionals.md) | Mar 31, 2025 | Conditionals — if, else-if, switch, ternary | 6 | ✅ Completed |
 | [03](./Phase-1_Java-Fundamentals/Day03_Loops.md) | Apr 01, 2025 | Loops — for, while, do-while, break, continue | 6 | ✅ Completed |
 | [04](./Phase-1_Java-Fundamentals/Day04_Loops_Patterns.md) | Apr 02, 2025 | Loop Patterns — triangles, pyramid, Floyd's, hollow | 6 | ✅ Completed |
@@ -299,6 +299,7 @@ Remaining   : 152
 | 🎓 Coding Ninjas | Structured concept learning | [codingninjas.com](https://www.codingninjas.com) |
 | 📖 GeeksforGeeks | Problems + concept reference | [geeksforgeeks.org](https://www.geeksforgeeks.org) |
 | 💻 LeetCode | Problem solving practice | [leetcode.com](https://leetcode.com) |
+| 🟢 W3Schools | Structured exercises + beginner practice | [w3schools.com/java](https://www.w3schools.com/java/default.asp) |
 | ☕ Java Docs | Language reference | [docs.oracle.com](https://docs.oracle.com/en/java/) |
 
 ---
