@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-9_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-8_Days_🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-10_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-9_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -149,6 +149,7 @@ java-dsa-journey/
 │   ├── Day06_Arrays.md                        ← ✅ Complete
 │   ├── Day07_Arrays_2D.md                     ← ✅ Complete
 │   ├── Day08_Strings.md                       ← ✅ Complete
+│   ├── Day09_OOP_Basics.md                    ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -173,17 +174,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 8
-Remaining   : 152
+Completed   : 9
+Remaining   : 151
 
-[████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5%
+[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5.625%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `████████░░` 38% | 8 | 21 |
+| Phase 1 — Java Fundamentals | `█████████░` 43% | 9 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -205,7 +206,8 @@ Remaining   : 152
 | [06](./Phase-1_Java-Fundamentals/Day06_Arrays.md) | Apr 04, 2025 | Arrays — declaration, traversal, search, rotate, duplicates | 6 | ✅ Completed |
 | [07](./Phase-1_Java-Fundamentals/Day07_Arrays_2D.md) | Apr 05, 2025 | 2D Arrays — matrix ops, transpose, rotate, spiral, set zeroes | 6 | ✅ Completed |
 | [08](./Phase-1_Java-Fundamentals/Day08_Strings.md) | Apr 06, 2025 | Strings — methods, palindrome, anagram, compression, brackets | 6 | ✅ Completed |
-| 09 | — | OOP — Classes, Objects, Constructors, this keyword | — | ⏳ Upcoming |
+| [09](./Phase-1_Java-Fundamentals/Day09_OOP_Basics.md) | Apr 07, 2025 | OOP — Classes, Objects, Constructors, this, Static vs Instance | 6 | ✅ Completed |
+| 10 | — | OOP — Inheritance, super, method overriding | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -215,10 +217,10 @@ Remaining   : 152
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 16 | 24 | 8 | 48 |
+| Custom Daily Problems | 18 | 27 | 9 | 54 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **16** | **24** | **8** | **48** |
+| **Total** | **18** | **27** | **9** | **54** |
 
 ---
 
@@ -241,7 +243,7 @@ Remaining   : 152
 - [ ] Functions & Methods
 - [ ] Arrays (1D + 2D)
 - [x] Strings & StringBuilder — immutability, methods, palindrome, anagram, compression
-- [ ] OOP — Classes, Objects, Constructors
+- [x] OOP — Classes, Objects, Constructors, this, encapsulation, static vs instance
 - [ ] OOP — Inheritance, Polymorphism, Encapsulation, Abstraction
 - [ ] Collections Framework
 - [ ] Recursion
@@ -289,6 +291,9 @@ Remaining   : 152
 | 21 | Day 8 | Immutability | Called `s.toUpperCase()` without capturing — s unchanged | Always capture: `String upper = s.toUpperCase()` |
 | 22 | Day 8 | String += | Used `result += i` in loop — O(n²) performance | Use StringBuilder.append() in loops — O(n) |
 | 23 | Day 8 | Anagram | Only checked sort approach — missed O(n) freq solution | Always implement both: sort O(n log n) AND freq O(n) |
+| 24 | Day 9 | Constructor | Wrote parameterized constructor — default disappeared | If you write ANY constructor, default is not auto-provided |
+| 25 | Day 9 | this() | Called this() mid-constructor — compile error | this() MUST be the FIRST statement in a constructor |
+| 26 | Day 9 | Static | Accessed static variable via object reference | Always access static via class name: `Employee.count` |
 
 ---
 
@@ -335,7 +340,7 @@ Remaining   : 152
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 8 of 160 Complete ✅ &nbsp;|&nbsp; 48 Problems Solved &nbsp;|&nbsp; Streak: 8 Days 🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 9 of 160 Complete ✅ &nbsp;|&nbsp; 54 Problems Solved &nbsp;|&nbsp; Streak: 9 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
