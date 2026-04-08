@@ -142,7 +142,7 @@ java-dsa-journey/
 │
 ├── Phase-1_Java-Fundamentals/
 │   ├── Day01_Variables_DataTypes.md           ← ✅ Complete + W3Schools Enhanced
-│   ├── Day02_Conditionals.md                  ← ✅ Complete
+│   ├── Day02_Conditionals.md                  ← ✅ Complete + W3Schools Enhanced
 │   ├── Day03_Loops.md                         ← ✅ Complete
 │   ├── Day04_Loops_Patterns.md                ← ✅ Complete
 │   ├── Day05_Functions.md                     ← ✅ Complete
@@ -199,7 +199,7 @@ Remaining   : 151
 | Day | Date | Topic | Problems | Status |
 |-----|------|-------|----------|--------|
 | [01](./Phase-1_Java-Fundamentals/Day01_Variables_DataTypes.md) | Mar 30, 2025 | Variables, Data Types, Operators + W3Schools 20 Exercise Sets (115 Q) | 6 + 115 | ✅ Completed |
-| [02](./Phase-1_Java-Fundamentals/Day02_Conditionals.md) | Mar 31, 2025 | Conditionals — if, else-if, switch, ternary | 6 | ✅ Completed |
+| [02](./Phase-1_Java-Fundamentals/Day02_Conditionals.md) | Mar 31, 2025 | Conditionals — if, else-if, switch, ternary + W3Schools 5 Sets (28 Q) | 6 + 28 | ✅ Completed |
 | [03](./Phase-1_Java-Fundamentals/Day03_Loops.md) | Apr 01, 2025 | Loops — for, while, do-while, break, continue | 6 | ✅ Completed |
 | [04](./Phase-1_Java-Fundamentals/Day04_Loops_Patterns.md) | Apr 02, 2025 | Loop Patterns — triangles, pyramid, Floyd's, hollow | 6 | ✅ Completed |
 | [05](./Phase-1_Java-Fundamentals/Day05_Functions.md) | Apr 03, 2025 | Functions & Methods — params, return, overloading, scope | 6 | ✅ Completed |
@@ -231,7 +231,7 @@ Remaining   : 151
 - [x] Variables & all 8 Primitive Data Types
 - [x] Type Casting — Widening & Narrowing
 - [x] All Operators — Arithmetic, Relational, Logical, Increment, Assignment, Ternary
-- [x] Conditionals — if, if-else, if-else-if, nested if, switch-case
+- [x] Conditionals — if, if-else, if-else-if, nested if, switch-case, ternary, String comparison
 - [x] String comparison — `.equals()` vs `==`
 - [x] Loops — for, while, do-while, break, continue, nested loops
 - [x] Loop Patterns — triangles, pyramids, Floyd's, hollow shapes, diamond
