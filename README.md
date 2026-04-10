@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-10_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-9_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-11_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-10_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -150,6 +150,7 @@ java-dsa-journey/
 │   ├── Day07_Arrays_2D.md                     ← ✅ Complete
 │   ├── Day08_Strings.md                       ← ✅ Complete
 │   ├── Day09_OOP_Basics.md                    ← ✅ Complete
+│   ├── Day10_OOP_Inheritance.md               ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -174,17 +175,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 9
-Remaining   : 151
+Completed   : 10
+Remaining   : 150
 
-[█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5.625%
+[██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6.25%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `█████████░` 43% | 9 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 48% | 10 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -207,7 +208,8 @@ Remaining   : 151
 | [07](./Phase-1_Java-Fundamentals/Day07_Arrays_2D.md) | Apr 05, 2025 | 2D Arrays — matrix ops, transpose, rotate, spiral, set zeroes | 6 | ✅ Completed |
 | [08](./Phase-1_Java-Fundamentals/Day08_Strings.md) | Apr 06, 2025 | Strings — methods, palindrome, anagram, compression, brackets | 6 | ✅ Completed |
 | [09](./Phase-1_Java-Fundamentals/Day09_OOP_Basics.md) | Apr 07, 2025 | OOP — Classes, Objects, Constructors, this, Static vs Instance | 6 | ✅ Completed |
-| 10 | — | OOP — Inheritance, super, method overriding | — | ⏳ Upcoming |
+| [10](./Phase-1_Java-Fundamentals/Day10_OOP_Inheritance.md) | Apr 08, 2025 | OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces | 6 | ✅ Completed |
+| 11 | — | Recursion — base case, call stack, recursive patterns | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -217,10 +219,10 @@ Remaining   : 151
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 18 | 27 | 9 | 54 |
+| Custom Daily Problems | 20 | 30 | 10 | 60 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **18** | **27** | **9** | **54** |
+| **Total** | **20** | **30** | **10** | **60** |
 
 ---
 
@@ -244,7 +246,7 @@ Remaining   : 151
 - [ ] Arrays (1D + 2D)
 - [x] Strings & StringBuilder — immutability, methods, palindrome, anagram, compression
 - [x] OOP — Classes, Objects, Constructors, this, encapsulation, static vs instance
-- [ ] OOP — Inheritance, Polymorphism, Encapsulation, Abstraction
+- [x] OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces, Template Method
 - [ ] Collections Framework
 - [ ] Recursion
 
@@ -294,6 +296,9 @@ Remaining   : 151
 | 24 | Day 9 | Constructor | Wrote parameterized constructor — default disappeared | If you write ANY constructor, default is not auto-provided |
 | 25 | Day 9 | this() | Called this() mid-constructor — compile error | this() MUST be the FIRST statement in a constructor |
 | 26 | Day 9 | Static | Accessed static variable via object reference | Always access static via class name: `Employee.count` |
+| 27 | Day 10 | Override | Forgot `@Override` — overload created instead of override | Always add `@Override` — catches signature mismatches |
+| 28 | Day 10 | super() | Called super() after other code — compile error | super() must be the FIRST statement in child constructor |
+| 29 | Day 10 | Interface | Called interface method on wrong reference type | Reference type limits visible methods — cast to correct interface |
 
 ---
 
@@ -340,7 +345,7 @@ Remaining   : 151
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 9 of 160 Complete ✅ &nbsp;|&nbsp; 54 Problems Solved &nbsp;|&nbsp; Streak: 9 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 10 of 160 Complete ✅ &nbsp;|&nbsp; 60 Problems Solved &nbsp;|&nbsp; Streak: 10 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
