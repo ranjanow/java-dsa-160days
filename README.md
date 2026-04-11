@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-12_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-11_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-13_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-12_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -152,6 +152,7 @@ java-dsa-journey/
 │   ├── Day09_OOP_Basics.md                    ← ✅ Complete
 │   ├── Day10_OOP_Inheritance.md               ← ✅ Complete
 │   ├── Day11_Recursion.md                     ← ✅ Complete
+│   ├── Day12_Collections.md                   ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -176,17 +177,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 11
-Remaining   : 149
+Completed   : 12
+Remaining   : 148
 
-[███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6.875%
+[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.5%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 52% | 11 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 57% | 12 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -211,7 +212,8 @@ Remaining   : 149
 | [09](./Phase-1_Java-Fundamentals/Day09_OOP_Basics.md) | Apr 07, 2025 | OOP — Classes, Objects, Constructors, this, Static vs Instance | 6 | ✅ Completed |
 | [10](./Phase-1_Java-Fundamentals/Day10_OOP_Inheritance.md) | Apr 08, 2025 | OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces | 6 | ✅ Completed |
 | [11](./Phase-1_Java-Fundamentals/Day11_Recursion.md) | Apr 09, 2025 | Recursion — factorial, Fibonacci, Hanoi, binary search, GCD | 6 | ✅ Completed |
-| 12 | — | Collections — ArrayList, HashMap, HashSet, Stack, Queue | — | ⏳ Upcoming |
+| [12](./Phase-1_Java-Fundamentals/Day12_Collections.md) | Apr 10, 2025 | Collections — ArrayList, HashMap, HashSet, Stack, Queue, Two Sum | 6 | ✅ Completed |
+| 13 | — | Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -221,10 +223,10 @@ Remaining   : 149
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 22 | 33 | 11 | 66 |
+| Custom Daily Problems | 24 | 36 | 12 | 72 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **22** | **33** | **11** | **66** |
+| **Total** | **24** | **36** | **12** | **72** |
 
 ---
 
@@ -249,7 +251,7 @@ Remaining   : 149
 - [x] Strings & StringBuilder — immutability, methods, palindrome, anagram, compression
 - [x] OOP — Classes, Objects, Constructors, this, encapsulation, static vs instance
 - [x] OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces, Template Method
-- [ ] Collections Framework
+- [x] Collections Framework — ArrayList, LinkedList, HashMap, HashSet, Stack, Queue, Deque
 - [x] Recursion — base case, call stack, factorial, Fibonacci, Hanoi, memoization preview
 
 ### ⬜ DSA Topics
@@ -304,6 +306,9 @@ Remaining   : 149
 | 30 | Day 11 | Base case | Forgot base case — StackOverflowError | Every recursion MUST have a reachable base case |
 | 31 | Day 11 | Fibonacci | Used naive O(2^n) fib for large n — too slow | Add memoization array to cache computed results → O(n) |
 | 32 | Day 11 | Power | Used `(left+right)/2` for mid — integer overflow risk | Always use `left + (right-left)/2` for mid in binary search |
+| 33 | Day 12 | ArrayList | Used `remove(int)` expecting value removal — wrong overload | `remove(0)` removes by index; `remove("str")` removes by value |
+| 34 | Day 12 | HashMap | Used `==` to compare Integer keys from HashMap | HashMap keys are Objects — always use `.equals()` or primitives |
+| 35 | Day 12 | Queue | Used `add()` instead of `offer()` — throws exception on full | Prefer `offer/poll/peek` — return null/false instead of throwing |
 
 ---
 
@@ -350,7 +355,7 @@ Remaining   : 149
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 11 of 160 Complete ✅ &nbsp;|&nbsp; 66 Problems Solved &nbsp;|&nbsp; Streak: 11 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 12 of 160 Complete ✅ &nbsp;|&nbsp; 72 Problems Solved &nbsp;|&nbsp; Streak: 12 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
