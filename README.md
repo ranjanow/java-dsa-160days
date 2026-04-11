@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-11_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-10_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-12_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-11_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -151,6 +151,7 @@ java-dsa-journey/
 │   ├── Day08_Strings.md                       ← ✅ Complete
 │   ├── Day09_OOP_Basics.md                    ← ✅ Complete
 │   ├── Day10_OOP_Inheritance.md               ← ✅ Complete
+│   ├── Day11_Recursion.md                     ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -175,17 +176,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 10
-Remaining   : 150
+Completed   : 11
+Remaining   : 149
 
-[██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6.25%
+[███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6.875%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 48% | 10 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 52% | 11 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -209,7 +210,8 @@ Remaining   : 150
 | [08](./Phase-1_Java-Fundamentals/Day08_Strings.md) | Apr 06, 2025 | Strings — methods, palindrome, anagram, compression, brackets | 6 | ✅ Completed |
 | [09](./Phase-1_Java-Fundamentals/Day09_OOP_Basics.md) | Apr 07, 2025 | OOP — Classes, Objects, Constructors, this, Static vs Instance | 6 | ✅ Completed |
 | [10](./Phase-1_Java-Fundamentals/Day10_OOP_Inheritance.md) | Apr 08, 2025 | OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces | 6 | ✅ Completed |
-| 11 | — | Recursion — base case, call stack, recursive patterns | — | ⏳ Upcoming |
+| [11](./Phase-1_Java-Fundamentals/Day11_Recursion.md) | Apr 09, 2025 | Recursion — factorial, Fibonacci, Hanoi, binary search, GCD | 6 | ✅ Completed |
+| 12 | — | Collections — ArrayList, HashMap, HashSet, Stack, Queue | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -219,10 +221,10 @@ Remaining   : 150
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 20 | 30 | 10 | 60 |
+| Custom Daily Problems | 22 | 33 | 11 | 66 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **20** | **30** | **10** | **60** |
+| **Total** | **22** | **33** | **11** | **66** |
 
 ---
 
@@ -248,7 +250,7 @@ Remaining   : 150
 - [x] OOP — Classes, Objects, Constructors, this, encapsulation, static vs instance
 - [x] OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces, Template Method
 - [ ] Collections Framework
-- [ ] Recursion
+- [x] Recursion — base case, call stack, factorial, Fibonacci, Hanoi, memoization preview
 
 ### ⬜ DSA Topics
 - [ ] Sorting Algorithms
@@ -299,6 +301,9 @@ Remaining   : 150
 | 27 | Day 10 | Override | Forgot `@Override` — overload created instead of override | Always add `@Override` — catches signature mismatches |
 | 28 | Day 10 | super() | Called super() after other code — compile error | super() must be the FIRST statement in child constructor |
 | 29 | Day 10 | Interface | Called interface method on wrong reference type | Reference type limits visible methods — cast to correct interface |
+| 30 | Day 11 | Base case | Forgot base case — StackOverflowError | Every recursion MUST have a reachable base case |
+| 31 | Day 11 | Fibonacci | Used naive O(2^n) fib for large n — too slow | Add memoization array to cache computed results → O(n) |
+| 32 | Day 11 | Power | Used `(left+right)/2` for mid — integer overflow risk | Always use `left + (right-left)/2` for mid in binary search |
 
 ---
 
@@ -345,7 +350,7 @@ Remaining   : 150
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 10 of 160 Complete ✅ &nbsp;|&nbsp; 60 Problems Solved &nbsp;|&nbsp; Streak: 10 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 11 of 160 Complete ✅ &nbsp;|&nbsp; 66 Problems Solved &nbsp;|&nbsp; Streak: 11 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
