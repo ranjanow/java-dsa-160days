@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-13_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-12_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-14_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-13_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -153,6 +153,7 @@ java-dsa-journey/
 │   ├── Day10_OOP_Inheritance.md               ← ✅ Complete
 │   ├── Day11_Recursion.md                     ← ✅ Complete
 │   ├── Day12_Collections.md                   ← ✅ Complete
+│   ├── Day13_Sorting.md                       ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -177,17 +178,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 12
-Remaining   : 148
+Completed   : 13
+Remaining   : 147
 
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7.5%
+[█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 8.125%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 57% | 12 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 62% | 13 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -213,7 +214,8 @@ Remaining   : 148
 | [10](./Phase-1_Java-Fundamentals/Day10_OOP_Inheritance.md) | Apr 08, 2025 | OOP — Inheritance, Polymorphism, Abstract Classes, Interfaces | 6 | ✅ Completed |
 | [11](./Phase-1_Java-Fundamentals/Day11_Recursion.md) | Apr 09, 2025 | Recursion — factorial, Fibonacci, Hanoi, binary search, GCD | 6 | ✅ Completed |
 | [12](./Phase-1_Java-Fundamentals/Day12_Collections.md) | Apr 10, 2025 | Collections — ArrayList, HashMap, HashSet, Stack, Queue, Two Sum | 6 | ✅ Completed |
-| 13 | — | Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick | — | ⏳ Upcoming |
+| [13](./Phase-1_Java-Fundamentals/Day13_Sorting.md) | Apr 11, 2025 | Sorting — Bubble, Selection, Insertion, Merge, Quick, Comparator | 6 | ✅ Completed |
+| 14 | — | Searching — Linear Search, Binary Search + Variations | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -223,10 +225,10 @@ Remaining   : 148
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 24 | 36 | 12 | 72 |
+| Custom Daily Problems | 26 | 39 | 13 | 78 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **24** | **36** | **12** | **72** |
+| **Total** | **26** | **39** | **13** | **78** |
 
 ---
 
@@ -255,7 +257,7 @@ Remaining   : 148
 - [x] Recursion — base case, call stack, factorial, Fibonacci, Hanoi, memoization preview
 
 ### ⬜ DSA Topics
-- [ ] Sorting Algorithms
+- [x] Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick, Randomized QS, Comparator
 - [ ] Searching Algorithms
 - [ ] Linked List
 - [ ] Stack & Queue
@@ -309,6 +311,9 @@ Remaining   : 148
 | 33 | Day 12 | ArrayList | Used `remove(int)` expecting value removal — wrong overload | `remove(0)` removes by index; `remove("str")` removes by value |
 | 34 | Day 12 | HashMap | Used `==` to compare Integer keys from HashMap | HashMap keys are Objects — always use `.equals()` or primitives |
 | 35 | Day 12 | Queue | Used `add()` instead of `offer()` — throws exception on full | Prefer `offer/poll/peek` — return null/false instead of throwing |
+| 36 | Day 13 | Quick Sort | Used fixed last-element pivot on sorted array — O(n²) | Always randomize pivot: swap random element with arr[hi] first |
+| 37 | Day 13 | Merge Sort | Used `(left+right)/2` — integer overflow on large arrays | Always use `left + (right-left)/2` for mid calculation |
+| 38 | Day 13 | Comparator | Used `a.marks - b.marks` for descending — should be reversed | Descending: `b.marks - a.marks`; or use `Comparator.reversed()` |
 
 ---
 
@@ -355,7 +360,7 @@ Remaining   : 148
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 12 of 160 Complete ✅ &nbsp;|&nbsp; 72 Problems Solved &nbsp;|&nbsp; Streak: 12 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 13 of 160 Complete ✅ &nbsp;|&nbsp; 78 Problems Solved &nbsp;|&nbsp; Streak: 13 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
