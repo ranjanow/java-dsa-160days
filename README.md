@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-14_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-13_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-15_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-14_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -154,6 +154,7 @@ java-dsa-journey/
 │   ├── Day11_Recursion.md                     ← ✅ Complete
 │   ├── Day12_Collections.md                   ← ✅ Complete
 │   ├── Day13_Sorting.md                       ← ✅ Complete
+│   ├── Day14_Searching.md                     ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -178,17 +179,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 13
-Remaining   : 147
+Completed   : 14
+Remaining   : 146
 
-[█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 8.125%
+[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░] 8.75%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 62% | 13 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 67% | 14 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -215,7 +216,8 @@ Remaining   : 147
 | [11](./Phase-1_Java-Fundamentals/Day11_Recursion.md) | Apr 09, 2025 | Recursion — factorial, Fibonacci, Hanoi, binary search, GCD | 6 | ✅ Completed |
 | [12](./Phase-1_Java-Fundamentals/Day12_Collections.md) | Apr 10, 2025 | Collections — ArrayList, HashMap, HashSet, Stack, Queue, Two Sum | 6 | ✅ Completed |
 | [13](./Phase-1_Java-Fundamentals/Day13_Sorting.md) | Apr 11, 2025 | Sorting — Bubble, Selection, Insertion, Merge, Quick, Comparator | 6 | ✅ Completed |
-| 14 | — | Searching — Linear Search, Binary Search + Variations | — | ⏳ Upcoming |
+| [14](./Phase-1_Java-Fundamentals/Day14_Searching.md) | Apr 12, 2025 | Searching — Linear, Binary Search, Rotated Array, BS on Answer | 6 | ✅ Completed |
+| 15 | — | Bit Manipulation — AND, OR, XOR, shifts, bit tricks | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -225,10 +227,10 @@ Remaining   : 147
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 26 | 39 | 13 | 78 |
+| Custom Daily Problems | 28 | 42 | 14 | 84 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **26** | **39** | **13** | **78** |
+| **Total** | **28** | **42** | **14** | **84** |
 
 ---
 
@@ -258,7 +260,7 @@ Remaining   : 147
 
 ### ⬜ DSA Topics
 - [x] Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick, Randomized QS, Comparator
-- [ ] Searching Algorithms
+- [x] Searching — Linear Search, Binary Search + all variants, BS on Answer
 - [ ] Linked List
 - [ ] Stack & Queue
 - [ ] Binary Search (Advanced)
@@ -314,6 +316,9 @@ Remaining   : 147
 | 36 | Day 13 | Quick Sort | Used fixed last-element pivot on sorted array — O(n²) | Always randomize pivot: swap random element with arr[hi] first |
 | 37 | Day 13 | Merge Sort | Used `(left+right)/2` — integer overflow on large arrays | Always use `left + (right-left)/2` for mid calculation |
 | 38 | Day 13 | Comparator | Used `a.marks - b.marks` for descending — should be reversed | Descending: `b.marks - a.marks`; or use `Comparator.reversed()` |
+| 39 | Day 14 | Binary Search | Used `left < right` — missed single-element arrays | Classic BS uses `left <= right` with `left=mid+1/right=mid-1` |
+| 40 | Day 14 | First Occ | Returned `mid` immediately instead of storing in `result` | Store in `result`, continue searching: first→right=mid-1, last→left=mid+1 |
+| 41 | Day 14 | BS on Answer | Set `lo = 0` instead of `max(pages)` — invalid lower bound | lo = largest single element (minimum possible answer) |
 
 ---
 
@@ -360,7 +365,7 @@ Remaining   : 147
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 13 of 160 Complete ✅ &nbsp;|&nbsp; 78 Problems Solved &nbsp;|&nbsp; Streak: 13 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 14 of 160 Complete ✅ &nbsp;|&nbsp; 84 Problems Solved &nbsp;|&nbsp; Streak: 14 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
