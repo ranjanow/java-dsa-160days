@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-15_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-14_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-16_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-15_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -155,6 +155,7 @@ java-dsa-journey/
 │   ├── Day12_Collections.md                   ← ✅ Complete
 │   ├── Day13_Sorting.md                       ← ✅ Complete
 │   ├── Day14_Searching.md                     ← ✅ Complete
+│   └── Day15_BitManipulation.md               ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -179,17 +180,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 14
-Remaining   : 146
+Completed   : 15
+Remaining   : 145
 
-[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░] 8.75%
+[███████████████░░░░░░░░░░░░░░░░░░░░░░░░] 9.375%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 67% | 14 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 71% | 15 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -217,7 +218,8 @@ Remaining   : 146
 | [12](./Phase-1_Java-Fundamentals/Day12_Collections.md) | Apr 10, 2025 | Collections — ArrayList, HashMap, HashSet, Stack, Queue, Two Sum | 6 | ✅ Completed |
 | [13](./Phase-1_Java-Fundamentals/Day13_Sorting.md) | Apr 11, 2025 | Sorting — Bubble, Selection, Insertion, Merge, Quick, Comparator | 6 | ✅ Completed |
 | [14](./Phase-1_Java-Fundamentals/Day14_Searching.md) | Apr 12, 2025 | Searching — Linear, Binary Search, Rotated Array, BS on Answer | 6 | ✅ Completed |
-| 15 | — | Bit Manipulation — AND, OR, XOR, shifts, bit tricks | — | ⏳ Upcoming |
+| [15](./Phase-1_Java-Fundamentals/Day15_BitManipulation.md) | Apr 13, 2025 | Bit Manipulation — operators, XOR tricks, bitmask, power of 2 | 6 | ✅ Completed |
+| 16 | — | Math for DSA — GCD, LCM, Sieve, Modular Arithmetic | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -227,10 +229,10 @@ Remaining   : 146
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 28 | 42 | 14 | 84 |
+| Custom Daily Problems | 30 | 45 | 15 | 90 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **28** | **42** | **14** | **84** |
+| **Total** | **30** | **45** | **15** | **90** |
 
 ---
 
@@ -261,6 +263,7 @@ Remaining   : 146
 ### ⬜ DSA Topics
 - [x] Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick, Randomized QS, Comparator
 - [x] Searching — Linear Search, Binary Search + all variants, BS on Answer
+- [x] Bit Manipulation — &, |, ^, ~, <<, >>, XOR tricks, bitmask, power of 2, count bits
 - [ ] Linked List
 - [ ] Stack & Queue
 - [ ] Binary Search (Advanced)
@@ -319,6 +322,9 @@ Remaining   : 146
 | 39 | Day 14 | Binary Search | Used `left < right` — missed single-element arrays | Classic BS uses `left <= right` with `left=mid+1/right=mid-1` |
 | 40 | Day 14 | First Occ | Returned `mid` immediately instead of storing in `result` | Store in `result`, continue searching: first→right=mid-1, last→left=mid+1 |
 | 41 | Day 14 | BS on Answer | Set `lo = 0` instead of `max(pages)` — invalid lower bound | lo = largest single element (minimum possible answer) |
+| 42 | Day 15 | isPowerOf2 | Forgot `n > 0` guard — 0 passes `n & (n-1) == 0` incorrectly | Always: `n > 0 && (n & (n-1)) == 0` |
+| 43 | Day 15 | XOR swap | Used XOR swap on same index `arr[i] ^= arr[i]` — zeros it out | Guard: `if (i != j)` before XOR swap |
+| 44 | Day 15 | Right shift | Used `>>` on negative numbers expecting zeros on left | Use `>>>` for unsigned right shift — `>>` propagates sign bit |
 
 ---
 
@@ -365,7 +371,7 @@ Remaining   : 146
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 14 of 160 Complete ✅ &nbsp;|&nbsp; 84 Problems Solved &nbsp;|&nbsp; Streak: 14 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 15 of 160 Complete ✅ &nbsp;|&nbsp; 90 Problems Solved &nbsp;|&nbsp; Streak: 15 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
