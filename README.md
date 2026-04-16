@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-16_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-15_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-17_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-16_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -155,7 +155,8 @@ java-dsa-journey/
 │   ├── Day12_Collections.md                   ← ✅ Complete
 │   ├── Day13_Sorting.md                       ← ✅ Complete
 │   ├── Day14_Searching.md                     ← ✅ Complete
-│   └── Day15_BitManipulation.md               ← ✅ Complete
+│   ├── Day15_BitManipulation.md               ← ✅ Complete
+│   └── Day16_Math_Basics.md                   ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -180,17 +181,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 15
-Remaining   : 145
+Completed   : 16
+Remaining   : 144
 
-[███████████████░░░░░░░░░░░░░░░░░░░░░░░░] 9.375%
+[████████████████░░░░░░░░░░░░░░░░░░░░░░░] 10%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 71% | 15 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 76% | 16 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -219,7 +220,8 @@ Remaining   : 145
 | [13](./Phase-1_Java-Fundamentals/Day13_Sorting.md) | Apr 11, 2025 | Sorting — Bubble, Selection, Insertion, Merge, Quick, Comparator | 6 | ✅ Completed |
 | [14](./Phase-1_Java-Fundamentals/Day14_Searching.md) | Apr 12, 2025 | Searching — Linear, Binary Search, Rotated Array, BS on Answer | 6 | ✅ Completed |
 | [15](./Phase-1_Java-Fundamentals/Day15_BitManipulation.md) | Apr 13, 2025 | Bit Manipulation — operators, XOR tricks, bitmask, power of 2 | 6 | ✅ Completed |
-| 16 | — | Math for DSA — GCD, LCM, Sieve, Modular Arithmetic | — | ⏳ Upcoming |
+| [16](./Phase-1_Java-Fundamentals/Day16_Math_Basics.md) | Apr 14, 2025 | Math for DSA — GCD, LCM, Sieve, Modular Arithmetic, Combinatorics | 6 | ✅ Completed |
+| 17 | — | Two Pointers + Sliding Window | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -229,10 +231,10 @@ Remaining   : 145
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 30 | 45 | 15 | 90 |
+| Custom Daily Problems | 32 | 48 | 16 | 96 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **30** | **45** | **15** | **90** |
+| **Total** | **32** | **48** | **16** | **96** |
 
 ---
 
@@ -264,6 +266,7 @@ Remaining   : 145
 - [x] Sorting Algorithms — Bubble, Selection, Insertion, Merge, Quick, Randomized QS, Comparator
 - [x] Searching — Linear Search, Binary Search + all variants, BS on Answer
 - [x] Bit Manipulation — &, |, ^, ~, <<, >>, XOR tricks, bitmask, power of 2, count bits
+- [x] Math for DSA — GCD, LCM, Sieve, SPF, modular arithmetic, fast exponentiation, nCr
 - [ ] Linked List
 - [ ] Stack & Queue
 - [ ] Binary Search (Advanced)
@@ -325,6 +328,9 @@ Remaining   : 145
 | 42 | Day 15 | isPowerOf2 | Forgot `n > 0` guard — 0 passes `n & (n-1) == 0` incorrectly | Always: `n > 0 && (n & (n-1)) == 0` |
 | 43 | Day 15 | XOR swap | Used XOR swap on same index `arr[i] ^= arr[i]` — zeros it out | Guard: `if (i != j)` before XOR swap |
 | 44 | Day 15 | Right shift | Used `>>` on negative numbers expecting zeros on left | Use `>>>` for unsigned right shift — `>>` propagates sign bit |
+| 45 | Day 16 | LCM | Used `(a * b) / gcd(a, b)` — overflow for large a, b | Always divide first: `(a / gcd(a, b)) * b` |
+| 46 | Day 16 | Mod subtract | `(a - b) % MOD` goes negative when a < b | Always: `(a - b % MOD + MOD) % MOD` |
+| 47 | Day 16 | Sieve | Started inner loop at `2*i` not `i*i` — wasted work | Start inner loop at `j = i*i` — smaller multiples already marked |
 
 ---
 
@@ -371,7 +377,7 @@ Remaining   : 145
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 15 of 160 Complete ✅ &nbsp;|&nbsp; 90 Problems Solved &nbsp;|&nbsp; Streak: 15 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 16 of 160 Complete ✅ &nbsp;|&nbsp; 96 Problems Solved &nbsp;|&nbsp; Streak: 16 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
