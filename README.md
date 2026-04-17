@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-17_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-16_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-18_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-17_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -156,7 +156,8 @@ java-dsa-journey/
 │   ├── Day13_Sorting.md                       ← ✅ Complete
 │   ├── Day14_Searching.md                     ← ✅ Complete
 │   ├── Day15_BitManipulation.md               ← ✅ Complete
-│   └── Day16_Math_Basics.md                   ← ✅ Complete
+│   ├── Day16_Math_Basics.md                   ← ✅ Complete
+│   └── Day17_TwoPointers.md                   ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -181,17 +182,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 16
-Remaining   : 144
+Completed   : 17
+Remaining   : 143
 
-[████████████████░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[█████████████████░░░░░░░░░░░░░░░░░░░░░░] 10.625%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 76% | 16 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 81% | 17 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -221,7 +222,8 @@ Remaining   : 144
 | [14](./Phase-1_Java-Fundamentals/Day14_Searching.md) | Apr 12, 2025 | Searching — Linear, Binary Search, Rotated Array, BS on Answer | 6 | ✅ Completed |
 | [15](./Phase-1_Java-Fundamentals/Day15_BitManipulation.md) | Apr 13, 2025 | Bit Manipulation — operators, XOR tricks, bitmask, power of 2 | 6 | ✅ Completed |
 | [16](./Phase-1_Java-Fundamentals/Day16_Math_Basics.md) | Apr 14, 2025 | Math for DSA — GCD, LCM, Sieve, Modular Arithmetic, Combinatorics | 6 | ✅ Completed |
-| 17 | — | Two Pointers + Sliding Window | — | ⏳ Upcoming |
+| [17](./Phase-1_Java-Fundamentals/Day17_TwoPointers.md) | Apr 15, 2025 | Two Pointers + Sliding Window — pair sum, move zeros, max subarray | 6 | ✅ Completed |
+| 18 | — | Prefix Sum + Suffix Arrays | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -231,10 +233,10 @@ Remaining   : 144
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 32 | 48 | 16 | 96 |
+| Custom Daily Problems | 34 | 51 | 17 | 102 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **32** | **48** | **16** | **96** |
+| **Total** | **34** | **51** | **17** | **102** |
 
 ---
 
@@ -267,6 +269,7 @@ Remaining   : 144
 - [x] Searching — Linear Search, Binary Search + all variants, BS on Answer
 - [x] Bit Manipulation — &, |, ^, ~, <<, >>, XOR tricks, bitmask, power of 2, count bits
 - [x] Math for DSA — GCD, LCM, Sieve, SPF, modular arithmetic, fast exponentiation, nCr
+- [x] Two Pointers + Sliding Window — pair sum, in-place modify, fixed/variable window, substr
 - [ ] Linked List
 - [ ] Stack & Queue
 - [ ] Binary Search (Advanced)
@@ -331,6 +334,9 @@ Remaining   : 144
 | 45 | Day 16 | LCM | Used `(a * b) / gcd(a, b)` — overflow for large a, b | Always divide first: `(a / gcd(a, b)) * b` |
 | 46 | Day 16 | Mod subtract | `(a - b) % MOD` goes negative when a < b | Always: `(a - b % MOD + MOD) % MOD` |
 | 47 | Day 16 | Sieve | Started inner loop at `2*i` not `i*i` — wasted work | Start inner loop at `j = i*i` — smaller multiples already marked |
+| 48 | Day 17 | Two Pointers | Used two pointers on unsorted array for pair sum | Two pointers (opposite ends) only work on SORTED arrays |
+| 49 | Day 17 | Sliding Window | Recomputed window sum from scratch each step — O(n*k) | Use `sum += arr[i] - arr[i-k]` — slide in O(1) per step |
+| 50 | Day 17 | Three Sum | Did not skip duplicates after finding triplet | After match: advance past all equal elements on both sides |
 
 ---
 
@@ -377,7 +383,7 @@ Remaining   : 144
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 16 of 160 Complete ✅ &nbsp;|&nbsp; 96 Problems Solved &nbsp;|&nbsp; Streak: 16 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 17 of 160 Complete ✅ &nbsp;|&nbsp; 102 Problems Solved &nbsp;|&nbsp; Streak: 17 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
