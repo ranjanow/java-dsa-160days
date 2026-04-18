@@ -7,8 +7,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Days](https://img.shields.io/badge/Duration-160_Days-orange?style=for-the-badge)
 ![Goal](https://img.shields.io/badge/Goal-Placement_Ready-red?style=for-the-badge)
-![Current](https://img.shields.io/badge/Current_Day-18_of_160-blueviolet?style=for-the-badge)
-![Streak](https://img.shields.io/badge/Streak-17_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
+![Current](https://img.shields.io/badge/Current_Day-19_of_160-blueviolet?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-18_Days_🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-yellow?style=for-the-badge)
 
 <br/>
 
@@ -157,7 +157,8 @@ java-dsa-journey/
 │   ├── Day14_Searching.md                     ← ✅ Complete
 │   ├── Day15_BitManipulation.md               ← ✅ Complete
 │   ├── Day16_Math_Basics.md                   ← ✅ Complete
-│   └── Day17_TwoPointers.md                   ← ✅ Complete
+│   ├── Day17_TwoPointers.md                   ← ✅ Complete
+│   └── Day18_Prefix_Suffix.md                 ← ✅ Complete
 │   └── ...
 │
 ├── Phase-2_Advanced-Java/
@@ -182,17 +183,17 @@ java-dsa-journey/
 
 ```
 Total Days  : 160
-Completed   : 17
-Remaining   : 143
+Completed   : 18
+Remaining   : 142
 
-[█████████████████░░░░░░░░░░░░░░░░░░░░░░] 10.625%
+[██████████████████░░░░░░░░░░░░░░░░░░░░░] 11.25%
 ```
 
 ### Phase Progress
 
 | Phase | Progress | Days Done | Total Days |
 |-------|----------|-----------|------------|
-| Phase 1 — Java Fundamentals | `██████████` 81% | 17 | 21 |
+| Phase 1 — Java Fundamentals | `██████████` 86% | 18 | 21 |
 | Phase 2 — Advanced Java | `░░░░░░░░░░` 0% | 0 | 24 |
 | Phase 3 — Core DSA | `░░░░░░░░░░` 0% | 0 | 55 |
 | Phase 4 — Advanced DSA | `░░░░░░░░░░` 0% | 0 | 40 |
@@ -223,7 +224,8 @@ Remaining   : 143
 | [15](./Phase-1_Java-Fundamentals/Day15_BitManipulation.md) | Apr 13, 2025 | Bit Manipulation — operators, XOR tricks, bitmask, power of 2 | 6 | ✅ Completed |
 | [16](./Phase-1_Java-Fundamentals/Day16_Math_Basics.md) | Apr 14, 2025 | Math for DSA — GCD, LCM, Sieve, Modular Arithmetic, Combinatorics | 6 | ✅ Completed |
 | [17](./Phase-1_Java-Fundamentals/Day17_TwoPointers.md) | Apr 15, 2025 | Two Pointers + Sliding Window — pair sum, move zeros, max subarray | 6 | ✅ Completed |
-| 18 | — | Prefix Sum + Suffix Arrays | — | ⏳ Upcoming |
+| [18](./Phase-1_Java-Fundamentals/Day18_Prefix_Suffix.md) | Apr 16, 2025 | Prefix Sum + Suffix — range queries, subarray sum=k, Kadane's | 6 | ✅ Completed |
+| 19 | — | Hashing — HashMap patterns, anagrams, frequency problems | — | ⏳ Upcoming |
 | 06 | — | Functions / Methods | — | ⏳ Upcoming |
 | 07 | — | Scope + Recursion Intro | — | ⏳ Upcoming |
 
@@ -233,10 +235,10 @@ Remaining   : 143
 
 | Platform | Easy | Medium | Hard | Total |
 |---------|------|--------|------|-------|
-| Custom Daily Problems | 34 | 51 | 17 | 102 |
+| Custom Daily Problems | 36 | 54 | 18 | 108 |
 | LeetCode | 0 | 0 | 0 | 0 |
 | GeeksforGeeks | 0 | 0 | 0 | 0 |
-| **Total** | **34** | **51** | **17** | **102** |
+| **Total** | **36** | **54** | **18** | **108** |
 
 ---
 
@@ -270,6 +272,7 @@ Remaining   : 143
 - [x] Bit Manipulation — &, |, ^, ~, <<, >>, XOR tricks, bitmask, power of 2, count bits
 - [x] Math for DSA — GCD, LCM, Sieve, SPF, modular arithmetic, fast exponentiation, nCr
 - [x] Two Pointers + Sliding Window — pair sum, in-place modify, fixed/variable window, substr
+- [x] Prefix Sum + Suffix — 1D/2D range queries, subarray sum=k, Kadane's, difference array
 - [ ] Linked List
 - [ ] Stack & Queue
 - [ ] Binary Search (Advanced)
@@ -337,6 +340,9 @@ Remaining   : 143
 | 48 | Day 17 | Two Pointers | Used two pointers on unsorted array for pair sum | Two pointers (opposite ends) only work on SORTED arrays |
 | 49 | Day 17 | Sliding Window | Recomputed window sum from scratch each step — O(n*k) | Use `sum += arr[i] - arr[i-k]` — slide in O(1) per step |
 | 50 | Day 17 | Three Sum | Did not skip duplicates after finding triplet | After match: advance past all equal elements on both sides |
+| 51 | Day 18 | Prefix Sum | Used `prefix[r] - prefix[l]` — off-by-one error | Always: `prefix[r+1] - prefix[l]` with +1 offset on right |
+| 52 | Day 18 | Subarray Sum | Forgot `freq.put(0, 1)` — missed subarrays from index 0 | Always initialize map with `(0, 1)` before the loop |
+| 53 | Day 18 | Longest Subarray | Used `put` instead of `putIfAbsent` in firstSeen map | For longest, store FIRST occurrence only — `putIfAbsent` |
 
 ---
 
@@ -383,7 +389,7 @@ Remaining   : 143
 
 ### 🔥 160 Days. 800 Hours. One Goal.
 
-**Day 17 of 160 Complete ✅ &nbsp;|&nbsp; 102 Problems Solved &nbsp;|&nbsp; Streak: 17 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
+**Day 18 of 160 Complete ✅ &nbsp;|&nbsp; 108 Problems Solved &nbsp;|&nbsp; Streak: 18 Days 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥**
 
 *"Discipline is the bridge between goals and accomplishment."*
 
